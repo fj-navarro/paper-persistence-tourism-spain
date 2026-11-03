@@ -159,184 +159,6 @@ We estimated the differencing parameter $d$ (and the 95% confidence bands) for t
 
 The first thing we observe is that the time trend is required in all except one region (Balearic Islands) and that the estimated coefficients are significantly positive in all cases. We also observe that most fractional differencing parameters $d$ fall within the 0.13--0.67 range, consistent with long memory but relatively fast mean reversion. Northern and inland regions such as Cantabria (0.13), Asturias (0.19), Castilla and Leon (0.22), La Rioja (0.24) and Aragon (0.28) display the lowest degrees of persistence, reflecting their smaller volumes of international tourism and more diversified or domestically anchored visitor bases. By contrast, island regions show higher---but still moderate---persistence, with the Balearic Islands (0.54) and the Canary Islands (0.59), along with Madrid (0.67), at the upper end of the distribution. These patterns are consistent with the stronger dependence of these regions on international air connectivity. This high level of persistence, reflected in higher estimated values of the fractional parameter $(d)$ may be consistent with slower adjustment processes in regions characterized by stronger dependence on international mobility and more complex tourism coordination structures. Other large metropolitan destinations and coastal areas such as the Basque Country (0.47), Andalucia (0.44), Galicia (0.42), Murcia (0.41) Valencia (0.37), Navarra (0.35) and Catalonia (0.35) fall in the middle range, reflecting diversified markets that combine international and domestic segments. Overall, the pre-COVID estimates point to a system in which shocks to arrivals were long-lasting but ultimately mean-reverting, with relatively bounded persistence. The seasonal AR coefficients are high in all cases, being above 0.9 in the majority of the series; the highest value corresponds to Balearic Islands, with ρ = 0.992, reflecting the seasonal nature of tourism in this region.
 
-**\[Insert Tables 1 - 3 about here\]**
-
-Tables 2 and 3 are similar to Table 1 but for resident and non-resident arrivals respectively. Starting with residents, in Table 2, we notice a slight reduction in the order of integration in comparison with Table 1 (total arrivals), particularly relevant the case of the Canary Islands (with a reduction from 0.59 in the case of total arrivals to 0.31 for residents only). The highest orders of integration correspond to Madrid and the Balearic Islands (with $d = 0.52$), followed by the Basque Country (0.46), while the lowest values are observed in Cantabria (0.13), followed by Asturias (0.17) and Castilla and Leon (0.19).
-
-On the other hand, for non-resident arrivals (see Table 3), the values of $d$ are generally higher than in Tables 1 and 2, meaning a higher persistence and longer effects of shocks. The exceptions are now Navarra, the Basque Country and La Rioja where the estimate of $d$ are lower than with the total arrivals, and particularly Balearic Islands (where the estimated order of integration $d$ moves from 0.54 for total arrivals to 0.17 for non-resident arrivals). On the other extreme, Canary Islands and Madrid display the highest orders of integration. Seasonality seems also to be slightly higher with non-resident arrivals. The higher degree of persistence observed for non-resident tourism may be consistent with interpretations derived from the Tourism Destination Life Cycle framework, in which more mature destinations may exhibit slower adjustment dynamics following major shocks.
-
-## 5.2. Overall Persistence (Data Ending in August 2025)
-
-The estimated persistence dynamics differs noticeably when the estimation window is extended through August 2025 (Tables 4 -- 6). A consistent finding across the three tables is that linear time trends become statistically unnecessary in all specifications. This pattern may reflect changes in the observed trend and persistence dynamics associated with the inclusion of the COVID-19 period in the sample. Seasonality also changes noticeably in the extended sample. Thus, the values of the seasonal AR coefficient are now much smaller particularly for the total and resident arrivals (Tables 4 and 5 respectively).
-
-Focusing now on the differencing parameter $d$, across virtually all regions, the order of fractional integration increases substantially, particularly for the non-resident arrivals (Table 6), with many values of $d$ exceeding 0.50--0.70. Furthermore, island and northern coastal regions display the strongest persistence: Balearic Islands (0.76), La Rioja (0.76), Asturias (0.73), Cantabria (0.73), Navarra (0.69) and Galicia (0.61), all of which exhibit very slow mean reversion, implying that shocks dissipate only gradually over time. Mainland coastal regions also show notable increases in persistence.
-
-With respect to seasonality, the values are much smaller than in the pre-COVID data, not exceeding 0.5 in any region except for Balearic Islands (0.523 for total and 0.559 for non-residents arrivals).
-
-**\[Insert Tables 4 -- 6 about here\]**
-
-## 5.3. Changes in Estimated Persistence Across Observation Windows
-
-Changes in estimated persistence across regions can be examined by comparing the pre-pandemic sample (ending in December 2019) with the extended sample (ending in August 2025). It should be noted that the extended sample through 2025 incorporates multiple phases associated with the COVID-19 period, including collapse, reopening, and recovery dynamics. Accordingly, differences in estimated persistence between the pre-pandemic and extended samples might be interpreted as changes associated with the inclusion of the COVID-19 period as a whole, rather than as identification of a specific structural break mechanism. The results, reported in Table 7 (comparisons across samples), can be summarized as follows:
-
-**\[Insert Table 7 about here\]**
-
-- **Sharp increases in coastal and northern regions.** Several northern and coastal regions experience very significant increases in persistence, indicating a shift from moderate to significantly more prolonged adjustment processes. Examples of these regions are Asturias (AST), Cantabria (CAN), La Rioja (RIO), or Castilla and Leon (CyL). In Cantabria, for instance, the estimated value of $d$ increased from 0.13 to 0.50, from 0.13 to 0.48 and from 0.30 to 0.73, for total, resident, and non-resident arrivals, respectively. Similarly, the increase in Asturias (AST) was from 0.19 to 0.42 (total arrivals), from 0.17 to 0.40 (residents) and from 0.26 to 0.73 (non-residents). Other regions with a similar pattern include Aragon (ARA), Galicia (GAL), and Navarra (NAV). These changes suggest that regions previously characterized by moderate long-memory dynamics now display much more prolonged adjustment processes.
-
-- **Island regions experience no amplification in the long-memory dynamics.** For both the Balearic Islands (BAL) and the Canary Islands (CAN), there were no significant differences in persistence when comparing the pre-COVID data (ending December 2019) and the extended data (ending August 2025) across any of the three types of arrival data, with the single exception of non-resident arrivals in the Balearic Islands. Here, the change is relevant, from 0.17 before COVID to 0.76 after COVID, underscoring the vulnerability of Balearic insular economies to global mobility disruptions.
-
-- **Metropolitan regions, and Madrid in particular, show a significant reduction in the long-memory parameter (**$\mathbf{d}$**).** Madrid (MAD) represents a singular case study with a substantial reduction across all three types of data. For total arrivals, the estimate reduces from 0.67 to 0.35; for residents, from 0.52 to 0.32, while for non-residents from 0.75 to 0.45. A reduction in $d$ also occurs in the Basque Country (PVA) (for total and resident arrivals, but not non-resident) and in Catalonia (CAT) (for non-residents). However, the differences in Catalonia are less significant, perhaps reflecting the stabilizing effect of its diversified, year-round visitor base.
-
-- **Regions along the Mediterranean coast register small changes in persistence.** Regions such as Andalucia (AND), Murcia (MUR) and Valencia (VAL)---with the exception of residents' arrivals in Valencia---present a small reduction in $d$. Conversely, Extremadura (EXT) displays a slight increase, which is moderate for non-resident arrivals in Castilla-La Mancha (CMA). These differences in $d$ estimates are not statistically significant in the majority of cases.
-
-Additional recursive estimations of the fractional differencing parameter $(d)$, obtained by sequentially extending the sample beginning in January 2020, indicate that the largest changes in estimated persistence emerge immediately following the onset of the pandemic period. This suggests that the observed increase in persistence is not solely attributable to mechanical sample-length effects.
-
-These results are consistent with persistence patterns sometimes associated in the literature with tourism hysteresis, in the sense that shocks appear to exhibit more prolonged effects over time. The observed cross-regional distribution of persistence is also consistent with differences in the underlying characteristics of Spain's tourism system, including variations in market composition and exposure to international tourism flows. These spatial patterns suggest that the observed differences in persistence may be associated with regional characteristics such as market composition, transport connectivity, seasonality, and exposure to international tourism dynamics.
-
-# 6. Discussion and Implications 
-
-The discussion that follows interprets the empirical findings through the lens of persistence dynamics, where the fractional differencing parameter $(d)$ serves as a reduced-form indicator of adjustment speed and structural inertia. In this context, higher values of $(d)$ reflect slower mean reversion and more prolonged effects of shocks. The theoretical constructs introduced in Section 2---such as path dependence, institutional lock-in, and destination maturity---are therefore used as interpretative frameworks to contextualize the observed persistence patterns.
-
-The empirical results reveal marked changes in the estimated persistence of tourism flows across Spain's regions when the COVID-19 period is included in the analysis. While long-memory behavior characterizes both resident and non-resident tourism, its magnitude, evolution, and spatial distribution differ across visitor segments and territories. The following discussion synthesizes these findings and examines their implications for the interpretation of regional adjustment dynamics and tourism resilience.
-
-## 6.1. How COVID-19 Reshaped the Persistence of Tourism Demand
-
-Three main insights emerge from the comparative analysis of persistence dynamics across regions and visitor types. First, prior to the pandemic, non-resident tourism displayed moderate persistence, with estimated values of the fractional differencing parameter $(d)$ indicating long memory but eventual mean reversion. In contrast, estimates for the extended sample through 2025 indicate systematically higher values of $(d)$ across most regions, particularly for non-resident arrivals, implying slower mean reversion and more prolonged effects of shocks. This pattern is consistent with a lengthening of the temporal adjustment process in international hotel-based tourism flows.
-
-Second, this evolution is highly asymmetric across visitor segments. Domestic tourism reveals a comparatively stable persistence dynamics, with estimated values of $(d)$ remaining within a relatively narrow range even when post-pandemic observations are included. By contrast, non-resident tourism exhibits a more substantial increase, suggesting that shocks to international tourism demand dissipate more slowly over time. These differences are consistent with the distinct exposure of domestic and international tourism to mobility restrictions and disruptions in cross-border travel during the pandemic period.
-
-Third, persistence dynamics also exhibit a spatial dimension. Regions with stronger exposure to international tourism---particularly island and northern coastal destinations---display larger increases in the persistence parameter $(d)$, whereas inland and metropolitan regions generally show more moderate changes. These spatial patterns suggest that observed differences in persistence may be associated with regional characteristics such as market composition, transport connectivity, seasonality, and exposure to international tourism dynamics.
-
-In this context, the observed increase in persistence in several regions is consistent with interpretations in which major shocks are associated with longer adjustment processes in tourism demand. In particular, higher values of $(d)$ imply slower mean reversion and more prolonged deviations from pre-existing trajectories. Madrid represents a contrasting pattern (see Table 7), displaying relatively high pre-pandemic persistence followed by a decline in the estimated persistence parameter in the extended sample. This reduction in $(d)$ is consistent with faster mean reversion and shorter-lived shock effects compared to the pre-pandemic period. These interpretations should nevertheless be understood as indicative rather than causal.
-
-## 6.2. Implications for Tourism Resilience and Regional Adjustment
-
-The observed variation in persistence dynamics provides a useful basis for interpreting differences in the temporal dimension of regional adjustment. In this context, the fractional differencing parameter $(d)$ can be understood as an indicator of the speed at which tourism demand reverts to its underlying trajectory following a shock. Higher values of $(d)$ imply more prolonged adjustment processes and slower mean reversion, whereas lower values indicate faster stabilization and shorter-lived effects of disturbances.
-
-Regions characterized by higher persistence---most notably island and northern coastal economies---display more prolonged deviations from trend when the COVID-19 period is included in the analysis. In these contexts, adjustment processes appear to unfold over longer time horizons, reflecting slower re-coordination dynamics following disruptions. By contrast, regions with lower or more stable persistence parameters exhibit comparatively faster adjustment dynamics. These findings suggest that tourism systems across Spain do not respond uniformly to large shocks, but instead display heterogeneous persistence profiles across territories and visitor segments.
-
-It is important to highlight that the present analysis does not evaluate specific policy interventions, nor does it establish causal relationships between persistence dynamics and underlying structural factors. The fractional parameter $(d)$ captures reduced-form properties of tourism adjustment dynamics, and the implications discussed above should therefore be interpreted as indicative rather than prescriptive.
-
-Finally, it is important to note that the empirical analysis is based on hotel accommodation data, which ensures long-run comparability and methodological consistency over the 1999--2025 period. The expansion of short-term rental platforms in recent years may have influenced the composition of accommodation demand in certain regions, particularly after the pandemic period. While this does not affect the internal consistency of the persistence estimates, it suggests that part of the observed heterogeneity may reflect structural reallocation across accommodation types. Future research incorporating integrated hotel and non-hotel datasets could provide further insight into accommodation-specific persistence dynamics.
-
-# 7. Conclusions
-
-This study examined the persistence of tourism flows across Spain's regions using fractional integration models, comparing the dynamics of resident and non-resident arrivals in the presence of the COVID-19 shock. By estimating the fractional differencing parameter $(d)$ across regions, visitor types, and alternative specifications, the analysis provides a comprehensive assessment of the long-memory properties of tourism demand and their evolution over time. In this framework, the parameter $(d)$ captures the degree of persistence in the data, offering a quantitative measure of the speed at which tourism systems revert to their underlying trajectory following unprecedented global disruption.
-
-The results indicate that the inclusion of the COVID-19 period in the sample is associated with changes in the behavior of tourism in Spain associated with a systematic increase in the estimated values of $(d)$ across most regions, particularly for non-resident arrivals. This pattern implies slower mean reversion and more prolonged effects of shocks in international tourism demand. By contrast, domestic tourism displays comparatively stable persistence dynamics, with estimated values of $(d)$ remaining within a narrower range. In addition, the analysis reveals changes in other statistical properties of the series, including a reduced role of deterministic trends and a decline in the strength of seasonal components in the extended sample.
-
-The observed variation in persistence also exhibits a clear spatial dimension. Regions with stronger exposure to international mobility---particularly island and northern coastal destinations---tend to show larger increases in the persistence parameter, whereas metropolitan and inland regions experience more moderate changes. These differences suggest that tourism systems across regions are characterized by heterogeneous adjustment dynamics, as reflected in their persistence profiles.
-
-Within this empirical context, the results are consistent with interpretations in which major shocks are associated with changes in the speed of adjustment of tourism demand. In particular, the higher persistence estimates observed in the extended sample is indicative of longer recovery paths in several regions. These dynamics are in line with theoretical perspectives that emphasize the role of structural inertia, path dependence, and system rigidity in shaping adjustment processes. However, the present analysis does not directly test these mechanisms, and therefore the interpretation of persistence patterns in terms of underlying structural factors should be understood as indicative rather than causal.
-
-More broadly, the findings highlight the usefulness of fractional integration methods for capturing the temporal dimension of tourism dynamics. By allowing for a continuum of persistence behaviors, the approach provides a flexible framework to analyze how shocks propagate and dissipate over time, offering insights that go beyond conventional stationary or unit-root representations.
-
-At the same time, several limitations point to avenues for future research. First, the analysis focuses on tourism arrivals; and it remains an open question whether similar persistence patterns characterize other dimensions of tourism activity, such as expenditures or value added. Second, the modelling framework treats regions independently and does not account for potential spatial interdependencies or spillovers effects across destinations. Third, while the persistence parameter $(d)$ provides a useful reduced-form indicator of adjustment dynamics, further work is required to identify the structural determinants underlying the observed patterns, including the role of transport connectivity, market composition, and changes in accommodation structures. Extending the analysis to spatial fractional models, fractional cointegration frameworks, or structurally enriched specifications could provide a deeper understanding of the factors underlying these persistence dynamics.
-
-# References
-
-Agarwal, S. (2002). Restructuring seaside tourism: The resort lifecyle. *Annals of Tourism Research*, *29*(1), 25--55.
-
-Alegre, J., & Cladera, M. (2006). Repeat visitation in mature sun and sand holiday destinations. *Journal of Travel Research*, *44*(3), 288--297.
-
-Arteche, J., & Robinson, P. M. (2000). Semiparametric inference in seasonal and cyclical long memory processes. *Journal of Time Series Analysis*, *21*(1), 1--25.
-
-Arthur, W. B. (1989). Competing technologies, increasing returns, and lock-in by historical events. *The Economic Journal*, *99*(394), 116--131.
-
-Assaf, A. G., Pestana Barros, C., & Gil-Alana, L. A. (2011). Persistence in the short-and long-term tourist arrivals to Australia. *Journal of Travel Research*, *50*(2), 213--229.
-
-Assaf, A. G., & Tsionas, M. (2018). The estimation and decomposition of tourism productivity. *Tourism Management*, *65*, 131--142. https://doi.org/10.1016/j.tourman.2017.09.004
-
-Assaker, G., & Hallak, R. (2013). Moderating effects of tourists' novelty-seeking tendencies on destination image, visitor satisfaction, and short-and long-term revisit intentions. *Journal of Travel Research*, *52*(5), 600--613.
-
-Baillie, R. T. (1996). Long memory processes and fractional integration in econometrics. *Journal of Econometrics*, *73*(1), 5--59.
-
-Biggs, D., Hall, C. M., & Stoeckl, N. (2012). The resilience of formal and informal tourism enterprises to disasters: Reef tourism in Phuket, Thailand. *Journal of Sustainable Tourism*, *20*(5), 645--665.
-
-Brouder, P. (2020). Reset redux: Possible evolutionary pathways towards the transformation of tourism in a COVID-19 world. *Tourism Geographies*, *22*(3), 484--490.
-
-Butler, R. (1980). The concept of a tourist area cycle of evolution: implications for management of resources. *Canadian Geographer*, *24*, 5--12. https://doi.org/10.1111/j.1541-0064.1980.tb00970.x
-
-Butler, R. (2025). Tourism destination development: The tourism area life cycle model. *Tourism Geographies*, *27*(3--4), 599--607.
-
-Caporale, G. M., & Gil-Alana, L. A. (2002). Fractional integration and mean reversion in stock prices. *The Quarterly Review of Economics and Finance*, *42*(3), 599--609.
-
-Caporale, G. M., Gil-Alana, L. A., & Imeri, A. (2023). Tourism persistence in the Southeastern European countries: The impact of covid-19. *Cogent Economics & Finance*, *11*(2), 2280349.
-
-Claudio-Quiroga, G., de Villanueva, C. F., & Gil-Alana, L. A. (2024). Tourism and covid-19 in three European cities. Change in persistence. *Cogent Social Sciences*, *10*(1), 2358159.
-
-Cuestas, J. C., & Gil-Alana, L. A. (2016). Testing for long memory in the presence of non-linear deterministic trends with Chebyshev polynomials. *Studies in Nonlinear Dynamics & Econometrics*, *20*(1), 57--74.
-
-Cuñado, J., Gil-Alana, L. A., & de Gracia, F. P. (2008). Persistence in international monthly arrivals in the Canary Islands. *Tourism Economics*, *14*(1), 123--129.
-
-Dickey, D. A., Hasza, D. P., & Fuller, W. A. (1984). Testing for unit roots in seasonal time series. *Journal of the American Statistical Association*, *79*(386), 355--367.
-
-Dutta, A., Mishra, T., Uddin, G. S., & Yang, Y. (2021). Brexit uncertainty and volatility persistence in tourism demand. *Current Issues in Tourism*, *24*(16), 2225--2232.
-
-Getz, D. (1992). Tourism planning and destination life cycle. *Annals of Tourism Research*, *19*(4), 752--770.
-
-Geweke, J., & Porter‐Hudak, S. (1983). The estimation and application of long memory time series models. *Journal of Time Series Analysis*, *4*(4), 221--238.
-
-Gil-Alana, L. A. (2005). Modelling international monthly arrivals using seasonal univariate long-memory processes. *Tourism Management*, *26*(6), 867--878.
-
-Gil-Alana, L. A., & Huijbens, E. H. (2018). Tourism in Iceland: Persistence and seasonality. *Annals of Tourism Research*, *68*, 20--29.
-
-Gil-Alana, L. A., & Poza, C. (2022). The impact of COVID-19 on the Spanish tourism sector. *Tourism Economics*, *28*(3), 646--653.
-
-Gil-Alana, L. A., & Robinson, P. M. (1997). Testing of unit root and other nonstationary hypotheses in macroeconomic time series. *Journal of Econometrics*, *80*(2), 241--268.
-
-Gil‐Alana, L. A., & Robinson, P. M. (2001). Testing of seasonal fractional integration in UK and Japanese consumption and income. *Journal of Applied Econometrics*, *16*(2), 95--114.
-
-Gil-Alana, L. A., Ruiz-Alba, J. L., & Ayestarán, R. (2020). UK tourism arrivals and departures: seasonality, persistence and time trends. *Applied Economics*, *52*(46), 5077--5087.
-
-Gössling, S., Scott, D., & Hall, C. M. (2020). Pandemics, tourism and global change: a rapid assessment of COVID-19. *Journal of Sustainable Tourism*, *29*(1), 1--20.
-
-Grabher, G. (1993). The weakness of strong ties: The lock-in of regional development in the Ruhr area. In G. Grabher (Ed.), *The Embedded Firm: On the Socioeconomics of Industrial Networks*. Routledge.
-
-Granger, C. W. J., & Joyeux, R. (1980). An introduction to long‐memory time series models and fractional differencing. *Journal of Time Series Analysis*, *1*(1), 15--29.
-
-Hylleberg, S., Engle, R. F., Granger, C. W. J., & Yoo, B. S. (1990). Seasonal integration and cointegration. *Journal of Econometrics*, *44*(1--2), 215--238.
-
-INE. (2022). Número de visitantes según tipología. In *Movimientos Turísticos en Fronteras*. https://www.ine.es/jaxiT3/Tabla.htm?t=10821&L=0
-
-INE. (2024). Contribution of tourism to the Spanish economy - Year 2023. In *Spanish Tourism Satellite Account*. https://www.ine.es/dyngs/INEbase/en/operacion.htm?c=Estadistica_C&cid=1254736169169&menu=ultiDatos&idp=1254735576581
-
-Martin, R. (2012). Regional economic resilience, hysteresis and recessionary shocks. *Journal of Economic Geography*, *12*(1), 1--32.
-
-Martin, R., & Sunley, P. (2006). Path dependence and regional economic evolution. *Journal of Economic Geography*, *6*(4), 395--437.
-
-Muštra, V., Perić, B. Š., & Pivčević, S. (2023). Cultural heritage sites, tourism and regional economic resilience. *Papers in Regional Science*, *102*(3), 465--483.
-
-Nelson, C. R., & Plosser, C. R. (1982). Trends and random walks in macroeconmic time series: some evidence and implications. *Journal of Monetary Economics*, *10*(2), 139--162.
-
-Neuburger, L., & Egger, R. (2021). Travel risk perception and travel behaviour during the COVID-19 pandemic 2020: A case study of the DACH region. *Current Issues in Tourism*, *24*(7), 1003--1016.
-
-Nguyen, Q. H. (2021). Tourism demand elasticities by income and prices of international market regions: evidence using Vietnam's data. *Economies*, *10*(1), 1.
-
-Payne, J. E., Gil-Alana, L. A., Mervar, A., & Goenechea, M. (2023). Tourist arrivals and overnight stays along the Croatian Adriatic Coast: Changes in persistence and seasonality from the COVID-19 disruption. *Tourism Economics*, *29*(6), 1679--1693.
-
-Perron, P. (1989). The great crash, the oil price shock, and the unit root hypothesis. *Econometrica: Journal of the Econometric Society*, 1361--1401.
-
-Reisen, V. A., Rodrigues, A. L., & Palma, W. (2006). Estimation of seasonal fractionally integrated processes. *Computational Statistics & Data Analysis*, *50*(2), 568--582.
-
-Robinson, P. M. (1994). Efficient tests of nonstationary hypotheses. *Journal of the American Statistical Association*, *89*(428), 1420--1437.
-
-Simmie, J., & Martin, R. (2010). The economic resilience of regions: towards an evolutionary approach. *Cambridge Journal of Regions, Economy and Society*, *3*(1), 27--43.
-
-Solarin, S. A., Claudio-Quiroga, G., & Gil-Alana, L. A. (2024). Persistence in Australian tourism employment industries. *Current Issues in Tourism*, *27*(5), 754--767.
-
-Solarin, S. A., Claudio-Quiroga, G., & Gil-Alana, L. A. (2026). Persistence of tourism electronic card transaction expenditure: implications for policy interventions. *Journal of Policy Research in Tourism, Leisure and Events*, 1--13.
-
-Song, H., Dwyer, L., Li, G., & Cao, Z. (2012). Tourism economics research: A review and assessment. *Annals of Tourism Research*, *39*(3), 1653--1682.
-
-Song, H., & Witt, S. F. (2006). Forecasting international tourist flows to Macau. *Tourism Management*, *27*(2), 214--224.
-
-Sowell, F. (1992). Maximum likelihood estimation of stationary univariate fractionally integrated time series models. *Journal of Econometrics*, *53*(1--3), 165--188.
-
-Stotten, R., Schermer, M., & Wilson, G. A. (2021). Lock-ins and community resilience: Two contrasting development pathways in the Austrian Alps. *Journal of Rural Studies*, *84*, 124--133.
-
-Sun, X., Wandelt, S., & Zhang, A. (2020). How did COVID-19 impact air transportation? A first peek through the lens of complex networks. *Journal of Air Transport Management*, *89*, 101928.
-
 **Table 1: Estimated Coefficients: Total Arrivals (Data Ending in December 2019)**
 
 <div class="paper-table" role="region" aria-label="Table 1" tabindex="0">
@@ -774,6 +596,18 @@ Source: own elaboration. Note: Column 2 indicates the estimates of the differenc
 </div>
 
 Source: own elaboration. Note: Column 2 indicates the estimates of the differencing parameter d and in parenthesis its 95% confidence interval. Columns 3 and 4 show the estimates of the constant and the time trend respectively (t-values in parenthesis). The last column displays the estimate of the seasonal AR coefficient.
+
+Tables 2 and 3 are similar to Table 1 but for resident and non-resident arrivals respectively. Starting with residents, in Table 2, we notice a slight reduction in the order of integration in comparison with Table 1 (total arrivals), particularly relevant the case of the Canary Islands (with a reduction from 0.59 in the case of total arrivals to 0.31 for residents only). The highest orders of integration correspond to Madrid and the Balearic Islands (with $d = 0.52$), followed by the Basque Country (0.46), while the lowest values are observed in Cantabria (0.13), followed by Asturias (0.17) and Castilla and Leon (0.19).
+
+On the other hand, for non-resident arrivals (see Table 3), the values of $d$ are generally higher than in Tables 1 and 2, meaning a higher persistence and longer effects of shocks. The exceptions are now Navarra, the Basque Country and La Rioja where the estimate of $d$ are lower than with the total arrivals, and particularly Balearic Islands (where the estimated order of integration $d$ moves from 0.54 for total arrivals to 0.17 for non-resident arrivals). On the other extreme, Canary Islands and Madrid display the highest orders of integration. Seasonality seems also to be slightly higher with non-resident arrivals. The higher degree of persistence observed for non-resident tourism may be consistent with interpretations derived from the Tourism Destination Life Cycle framework, in which more mature destinations may exhibit slower adjustment dynamics following major shocks.
+
+## 5.2. Overall Persistence (Data Ending in August 2025)
+
+The estimated persistence dynamics differs noticeably when the estimation window is extended through August 2025 (Tables 4 -- 6). A consistent finding across the three tables is that linear time trends become statistically unnecessary in all specifications. This pattern may reflect changes in the observed trend and persistence dynamics associated with the inclusion of the COVID-19 period in the sample. Seasonality also changes noticeably in the extended sample. Thus, the values of the seasonal AR coefficient are now much smaller particularly for the total and resident arrivals (Tables 4 and 5 respectively).
+
+Focusing now on the differencing parameter $d$, across virtually all regions, the order of fractional integration increases substantially, particularly for the non-resident arrivals (Table 6), with many values of $d$ exceeding 0.50--0.70. Furthermore, island and northern coastal regions display the strongest persistence: Balearic Islands (0.76), La Rioja (0.76), Asturias (0.73), Cantabria (0.73), Navarra (0.69) and Galicia (0.61), all of which exhibit very slow mean reversion, implying that shocks dissipate only gradually over time. Mainland coastal regions also show notable increases in persistence.
+
+With respect to seasonality, the values are much smaller than in the pre-COVID data, not exceeding 0.5 in any region except for Balearic Islands (0.523 for total and 0.559 for non-residents arrivals).
 
 **Table 4: Estimated Coefficients: Total Arrivals (Data Ending in August 2025)**
 
@@ -1213,6 +1047,10 @@ Source: own elaboration. Note: Column 2 indicates the estimates of the differenc
 
 Source: own elaboration. Note: Column 2 indicates the estimates of the differencing parameter d and in parenthesis its 95% confidence interval. Columns 3 and 4 show the estimates of the constant and the time trend respectively (t-values in parenthesis). The last column displays the estimate of the seasonal AR coefficient.
 
+## 5.3. Changes in Estimated Persistence Across Observation Windows
+
+Changes in estimated persistence across regions can be examined by comparing the pre-pandemic sample (ending in December 2019) with the extended sample (ending in August 2025). It should be noted that the extended sample through 2025 incorporates multiple phases associated with the COVID-19 period, including collapse, reopening, and recovery dynamics. Accordingly, differences in estimated persistence between the pre-pandemic and extended samples might be interpreted as changes associated with the inclusion of the COVID-19 period as a whole, rather than as identification of a specific structural break mechanism. The results, reported in Table 7 (comparisons across samples), can be summarized as follows:
+
 **Table 7: Comparisons in Persistence by Region**
 
 <div class="paper-table" role="region" aria-label="Table 7" tabindex="0">
@@ -1513,3 +1351,159 @@ Arrivals</strong></th>
 </div>
 
 Source: own elaboration
+
+- **Sharp increases in coastal and northern regions.** Several northern and coastal regions experience very significant increases in persistence, indicating a shift from moderate to significantly more prolonged adjustment processes. Examples of these regions are Asturias (AST), Cantabria (CAN), La Rioja (RIO), or Castilla and Leon (CyL). In Cantabria, for instance, the estimated value of $d$ increased from 0.13 to 0.50, from 0.13 to 0.48 and from 0.30 to 0.73, for total, resident, and non-resident arrivals, respectively. Similarly, the increase in Asturias (AST) was from 0.19 to 0.42 (total arrivals), from 0.17 to 0.40 (residents) and from 0.26 to 0.73 (non-residents). Other regions with a similar pattern include Aragon (ARA), Galicia (GAL), and Navarra (NAV). These changes suggest that regions previously characterized by moderate long-memory dynamics now display much more prolonged adjustment processes.
+
+- **Island regions experience no amplification in the long-memory dynamics.** For both the Balearic Islands (BAL) and the Canary Islands (CAN), there were no significant differences in persistence when comparing the pre-COVID data (ending December 2019) and the extended data (ending August 2025) across any of the three types of arrival data, with the single exception of non-resident arrivals in the Balearic Islands. Here, the change is relevant, from 0.17 before COVID to 0.76 after COVID, underscoring the vulnerability of Balearic insular economies to global mobility disruptions.
+
+- **Metropolitan regions, and Madrid in particular, show a significant reduction in the long-memory parameter (**$\mathbf{d}$**).** Madrid (MAD) represents a singular case study with a substantial reduction across all three types of data. For total arrivals, the estimate reduces from 0.67 to 0.35; for residents, from 0.52 to 0.32, while for non-residents from 0.75 to 0.45. A reduction in $d$ also occurs in the Basque Country (PVA) (for total and resident arrivals, but not non-resident) and in Catalonia (CAT) (for non-residents). However, the differences in Catalonia are less significant, perhaps reflecting the stabilizing effect of its diversified, year-round visitor base.
+
+- **Regions along the Mediterranean coast register small changes in persistence.** Regions such as Andalucia (AND), Murcia (MUR) and Valencia (VAL)---with the exception of residents' arrivals in Valencia---present a small reduction in $d$. Conversely, Extremadura (EXT) displays a slight increase, which is moderate for non-resident arrivals in Castilla-La Mancha (CMA). These differences in $d$ estimates are not statistically significant in the majority of cases.
+
+Additional recursive estimations of the fractional differencing parameter $(d)$, obtained by sequentially extending the sample beginning in January 2020, indicate that the largest changes in estimated persistence emerge immediately following the onset of the pandemic period. This suggests that the observed increase in persistence is not solely attributable to mechanical sample-length effects.
+
+These results are consistent with persistence patterns sometimes associated in the literature with tourism hysteresis, in the sense that shocks appear to exhibit more prolonged effects over time. The observed cross-regional distribution of persistence is also consistent with differences in the underlying characteristics of Spain's tourism system, including variations in market composition and exposure to international tourism flows. These spatial patterns suggest that the observed differences in persistence may be associated with regional characteristics such as market composition, transport connectivity, seasonality, and exposure to international tourism dynamics.
+
+# 6. Discussion and Implications 
+
+The discussion that follows interprets the empirical findings through the lens of persistence dynamics, where the fractional differencing parameter $(d)$ serves as a reduced-form indicator of adjustment speed and structural inertia. In this context, higher values of $(d)$ reflect slower mean reversion and more prolonged effects of shocks. The theoretical constructs introduced in Section 2---such as path dependence, institutional lock-in, and destination maturity---are therefore used as interpretative frameworks to contextualize the observed persistence patterns.
+
+The empirical results reveal marked changes in the estimated persistence of tourism flows across Spain's regions when the COVID-19 period is included in the analysis. While long-memory behavior characterizes both resident and non-resident tourism, its magnitude, evolution, and spatial distribution differ across visitor segments and territories. The following discussion synthesizes these findings and examines their implications for the interpretation of regional adjustment dynamics and tourism resilience.
+
+## 6.1. How COVID-19 Reshaped the Persistence of Tourism Demand
+
+Three main insights emerge from the comparative analysis of persistence dynamics across regions and visitor types. First, prior to the pandemic, non-resident tourism displayed moderate persistence, with estimated values of the fractional differencing parameter $(d)$ indicating long memory but eventual mean reversion. In contrast, estimates for the extended sample through 2025 indicate systematically higher values of $(d)$ across most regions, particularly for non-resident arrivals, implying slower mean reversion and more prolonged effects of shocks. This pattern is consistent with a lengthening of the temporal adjustment process in international hotel-based tourism flows.
+
+Second, this evolution is highly asymmetric across visitor segments. Domestic tourism reveals a comparatively stable persistence dynamics, with estimated values of $(d)$ remaining within a relatively narrow range even when post-pandemic observations are included. By contrast, non-resident tourism exhibits a more substantial increase, suggesting that shocks to international tourism demand dissipate more slowly over time. These differences are consistent with the distinct exposure of domestic and international tourism to mobility restrictions and disruptions in cross-border travel during the pandemic period.
+
+Third, persistence dynamics also exhibit a spatial dimension. Regions with stronger exposure to international tourism---particularly island and northern coastal destinations---display larger increases in the persistence parameter $(d)$, whereas inland and metropolitan regions generally show more moderate changes. These spatial patterns suggest that observed differences in persistence may be associated with regional characteristics such as market composition, transport connectivity, seasonality, and exposure to international tourism dynamics.
+
+In this context, the observed increase in persistence in several regions is consistent with interpretations in which major shocks are associated with longer adjustment processes in tourism demand. In particular, higher values of $(d)$ imply slower mean reversion and more prolonged deviations from pre-existing trajectories. Madrid represents a contrasting pattern (see Table 7), displaying relatively high pre-pandemic persistence followed by a decline in the estimated persistence parameter in the extended sample. This reduction in $(d)$ is consistent with faster mean reversion and shorter-lived shock effects compared to the pre-pandemic period. These interpretations should nevertheless be understood as indicative rather than causal.
+
+## 6.2. Implications for Tourism Resilience and Regional Adjustment
+
+The observed variation in persistence dynamics provides a useful basis for interpreting differences in the temporal dimension of regional adjustment. In this context, the fractional differencing parameter $(d)$ can be understood as an indicator of the speed at which tourism demand reverts to its underlying trajectory following a shock. Higher values of $(d)$ imply more prolonged adjustment processes and slower mean reversion, whereas lower values indicate faster stabilization and shorter-lived effects of disturbances.
+
+Regions characterized by higher persistence---most notably island and northern coastal economies---display more prolonged deviations from trend when the COVID-19 period is included in the analysis. In these contexts, adjustment processes appear to unfold over longer time horizons, reflecting slower re-coordination dynamics following disruptions. By contrast, regions with lower or more stable persistence parameters exhibit comparatively faster adjustment dynamics. These findings suggest that tourism systems across Spain do not respond uniformly to large shocks, but instead display heterogeneous persistence profiles across territories and visitor segments.
+
+It is important to highlight that the present analysis does not evaluate specific policy interventions, nor does it establish causal relationships between persistence dynamics and underlying structural factors. The fractional parameter $(d)$ captures reduced-form properties of tourism adjustment dynamics, and the implications discussed above should therefore be interpreted as indicative rather than prescriptive.
+
+Finally, it is important to note that the empirical analysis is based on hotel accommodation data, which ensures long-run comparability and methodological consistency over the 1999--2025 period. The expansion of short-term rental platforms in recent years may have influenced the composition of accommodation demand in certain regions, particularly after the pandemic period. While this does not affect the internal consistency of the persistence estimates, it suggests that part of the observed heterogeneity may reflect structural reallocation across accommodation types. Future research incorporating integrated hotel and non-hotel datasets could provide further insight into accommodation-specific persistence dynamics.
+
+# 7. Conclusions
+
+This study examined the persistence of tourism flows across Spain's regions using fractional integration models, comparing the dynamics of resident and non-resident arrivals in the presence of the COVID-19 shock. By estimating the fractional differencing parameter $(d)$ across regions, visitor types, and alternative specifications, the analysis provides a comprehensive assessment of the long-memory properties of tourism demand and their evolution over time. In this framework, the parameter $(d)$ captures the degree of persistence in the data, offering a quantitative measure of the speed at which tourism systems revert to their underlying trajectory following unprecedented global disruption.
+
+The results indicate that the inclusion of the COVID-19 period in the sample is associated with changes in the behavior of tourism in Spain associated with a systematic increase in the estimated values of $(d)$ across most regions, particularly for non-resident arrivals. This pattern implies slower mean reversion and more prolonged effects of shocks in international tourism demand. By contrast, domestic tourism displays comparatively stable persistence dynamics, with estimated values of $(d)$ remaining within a narrower range. In addition, the analysis reveals changes in other statistical properties of the series, including a reduced role of deterministic trends and a decline in the strength of seasonal components in the extended sample.
+
+The observed variation in persistence also exhibits a clear spatial dimension. Regions with stronger exposure to international mobility---particularly island and northern coastal destinations---tend to show larger increases in the persistence parameter, whereas metropolitan and inland regions experience more moderate changes. These differences suggest that tourism systems across regions are characterized by heterogeneous adjustment dynamics, as reflected in their persistence profiles.
+
+Within this empirical context, the results are consistent with interpretations in which major shocks are associated with changes in the speed of adjustment of tourism demand. In particular, the higher persistence estimates observed in the extended sample is indicative of longer recovery paths in several regions. These dynamics are in line with theoretical perspectives that emphasize the role of structural inertia, path dependence, and system rigidity in shaping adjustment processes. However, the present analysis does not directly test these mechanisms, and therefore the interpretation of persistence patterns in terms of underlying structural factors should be understood as indicative rather than causal.
+
+More broadly, the findings highlight the usefulness of fractional integration methods for capturing the temporal dimension of tourism dynamics. By allowing for a continuum of persistence behaviors, the approach provides a flexible framework to analyze how shocks propagate and dissipate over time, offering insights that go beyond conventional stationary or unit-root representations.
+
+At the same time, several limitations point to avenues for future research. First, the analysis focuses on tourism arrivals; and it remains an open question whether similar persistence patterns characterize other dimensions of tourism activity, such as expenditures or value added. Second, the modelling framework treats regions independently and does not account for potential spatial interdependencies or spillovers effects across destinations. Third, while the persistence parameter $(d)$ provides a useful reduced-form indicator of adjustment dynamics, further work is required to identify the structural determinants underlying the observed patterns, including the role of transport connectivity, market composition, and changes in accommodation structures. Extending the analysis to spatial fractional models, fractional cointegration frameworks, or structurally enriched specifications could provide a deeper understanding of the factors underlying these persistence dynamics.
+
+# References
+
+Agarwal, S. (2002). Restructuring seaside tourism: The resort lifecyle. *Annals of Tourism Research*, *29*(1), 25--55.
+
+Alegre, J., & Cladera, M. (2006). Repeat visitation in mature sun and sand holiday destinations. *Journal of Travel Research*, *44*(3), 288--297.
+
+Arteche, J., & Robinson, P. M. (2000). Semiparametric inference in seasonal and cyclical long memory processes. *Journal of Time Series Analysis*, *21*(1), 1--25.
+
+Arthur, W. B. (1989). Competing technologies, increasing returns, and lock-in by historical events. *The Economic Journal*, *99*(394), 116--131.
+
+Assaf, A. G., Pestana Barros, C., & Gil-Alana, L. A. (2011). Persistence in the short-and long-term tourist arrivals to Australia. *Journal of Travel Research*, *50*(2), 213--229.
+
+Assaf, A. G., & Tsionas, M. (2018). The estimation and decomposition of tourism productivity. *Tourism Management*, *65*, 131--142. https://doi.org/10.1016/j.tourman.2017.09.004
+
+Assaker, G., & Hallak, R. (2013). Moderating effects of tourists' novelty-seeking tendencies on destination image, visitor satisfaction, and short-and long-term revisit intentions. *Journal of Travel Research*, *52*(5), 600--613.
+
+Baillie, R. T. (1996). Long memory processes and fractional integration in econometrics. *Journal of Econometrics*, *73*(1), 5--59.
+
+Biggs, D., Hall, C. M., & Stoeckl, N. (2012). The resilience of formal and informal tourism enterprises to disasters: Reef tourism in Phuket, Thailand. *Journal of Sustainable Tourism*, *20*(5), 645--665.
+
+Brouder, P. (2020). Reset redux: Possible evolutionary pathways towards the transformation of tourism in a COVID-19 world. *Tourism Geographies*, *22*(3), 484--490.
+
+Butler, R. (1980). The concept of a tourist area cycle of evolution: implications for management of resources. *Canadian Geographer*, *24*, 5--12. https://doi.org/10.1111/j.1541-0064.1980.tb00970.x
+
+Butler, R. (2025). Tourism destination development: The tourism area life cycle model. *Tourism Geographies*, *27*(3--4), 599--607.
+
+Caporale, G. M., & Gil-Alana, L. A. (2002). Fractional integration and mean reversion in stock prices. *The Quarterly Review of Economics and Finance*, *42*(3), 599--609.
+
+Caporale, G. M., Gil-Alana, L. A., & Imeri, A. (2023). Tourism persistence in the Southeastern European countries: The impact of covid-19. *Cogent Economics & Finance*, *11*(2), 2280349.
+
+Claudio-Quiroga, G., de Villanueva, C. F., & Gil-Alana, L. A. (2024). Tourism and covid-19 in three European cities. Change in persistence. *Cogent Social Sciences*, *10*(1), 2358159.
+
+Cuestas, J. C., & Gil-Alana, L. A. (2016). Testing for long memory in the presence of non-linear deterministic trends with Chebyshev polynomials. *Studies in Nonlinear Dynamics & Econometrics*, *20*(1), 57--74.
+
+Cuñado, J., Gil-Alana, L. A., & de Gracia, F. P. (2008). Persistence in international monthly arrivals in the Canary Islands. *Tourism Economics*, *14*(1), 123--129.
+
+Dickey, D. A., Hasza, D. P., & Fuller, W. A. (1984). Testing for unit roots in seasonal time series. *Journal of the American Statistical Association*, *79*(386), 355--367.
+
+Dutta, A., Mishra, T., Uddin, G. S., & Yang, Y. (2021). Brexit uncertainty and volatility persistence in tourism demand. *Current Issues in Tourism*, *24*(16), 2225--2232.
+
+Getz, D. (1992). Tourism planning and destination life cycle. *Annals of Tourism Research*, *19*(4), 752--770.
+
+Geweke, J., & Porter‐Hudak, S. (1983). The estimation and application of long memory time series models. *Journal of Time Series Analysis*, *4*(4), 221--238.
+
+Gil-Alana, L. A. (2005). Modelling international monthly arrivals using seasonal univariate long-memory processes. *Tourism Management*, *26*(6), 867--878.
+
+Gil-Alana, L. A., & Huijbens, E. H. (2018). Tourism in Iceland: Persistence and seasonality. *Annals of Tourism Research*, *68*, 20--29.
+
+Gil-Alana, L. A., & Poza, C. (2022). The impact of COVID-19 on the Spanish tourism sector. *Tourism Economics*, *28*(3), 646--653.
+
+Gil-Alana, L. A., & Robinson, P. M. (1997). Testing of unit root and other nonstationary hypotheses in macroeconomic time series. *Journal of Econometrics*, *80*(2), 241--268.
+
+Gil‐Alana, L. A., & Robinson, P. M. (2001). Testing of seasonal fractional integration in UK and Japanese consumption and income. *Journal of Applied Econometrics*, *16*(2), 95--114.
+
+Gil-Alana, L. A., Ruiz-Alba, J. L., & Ayestarán, R. (2020). UK tourism arrivals and departures: seasonality, persistence and time trends. *Applied Economics*, *52*(46), 5077--5087.
+
+Gössling, S., Scott, D., & Hall, C. M. (2020). Pandemics, tourism and global change: a rapid assessment of COVID-19. *Journal of Sustainable Tourism*, *29*(1), 1--20.
+
+Grabher, G. (1993). The weakness of strong ties: The lock-in of regional development in the Ruhr area. In G. Grabher (Ed.), *The Embedded Firm: On the Socioeconomics of Industrial Networks*. Routledge.
+
+Granger, C. W. J., & Joyeux, R. (1980). An introduction to long‐memory time series models and fractional differencing. *Journal of Time Series Analysis*, *1*(1), 15--29.
+
+Hylleberg, S., Engle, R. F., Granger, C. W. J., & Yoo, B. S. (1990). Seasonal integration and cointegration. *Journal of Econometrics*, *44*(1--2), 215--238.
+
+INE. (2022). Número de visitantes según tipología. In *Movimientos Turísticos en Fronteras*. https://www.ine.es/jaxiT3/Tabla.htm?t=10821&L=0
+
+INE. (2024). Contribution of tourism to the Spanish economy - Year 2023. In *Spanish Tourism Satellite Account*. https://www.ine.es/dyngs/INEbase/en/operacion.htm?c=Estadistica_C&cid=1254736169169&menu=ultiDatos&idp=1254735576581
+
+Martin, R. (2012). Regional economic resilience, hysteresis and recessionary shocks. *Journal of Economic Geography*, *12*(1), 1--32.
+
+Martin, R., & Sunley, P. (2006). Path dependence and regional economic evolution. *Journal of Economic Geography*, *6*(4), 395--437.
+
+Muštra, V., Perić, B. Š., & Pivčević, S. (2023). Cultural heritage sites, tourism and regional economic resilience. *Papers in Regional Science*, *102*(3), 465--483.
+
+Nelson, C. R., & Plosser, C. R. (1982). Trends and random walks in macroeconmic time series: some evidence and implications. *Journal of Monetary Economics*, *10*(2), 139--162.
+
+Neuburger, L., & Egger, R. (2021). Travel risk perception and travel behaviour during the COVID-19 pandemic 2020: A case study of the DACH region. *Current Issues in Tourism*, *24*(7), 1003--1016.
+
+Nguyen, Q. H. (2021). Tourism demand elasticities by income and prices of international market regions: evidence using Vietnam's data. *Economies*, *10*(1), 1.
+
+Payne, J. E., Gil-Alana, L. A., Mervar, A., & Goenechea, M. (2023). Tourist arrivals and overnight stays along the Croatian Adriatic Coast: Changes in persistence and seasonality from the COVID-19 disruption. *Tourism Economics*, *29*(6), 1679--1693.
+
+Perron, P. (1989). The great crash, the oil price shock, and the unit root hypothesis. *Econometrica: Journal of the Econometric Society*, 1361--1401.
+
+Reisen, V. A., Rodrigues, A. L., & Palma, W. (2006). Estimation of seasonal fractionally integrated processes. *Computational Statistics & Data Analysis*, *50*(2), 568--582.
+
+Robinson, P. M. (1994). Efficient tests of nonstationary hypotheses. *Journal of the American Statistical Association*, *89*(428), 1420--1437.
+
+Simmie, J., & Martin, R. (2010). The economic resilience of regions: towards an evolutionary approach. *Cambridge Journal of Regions, Economy and Society*, *3*(1), 27--43.
+
+Solarin, S. A., Claudio-Quiroga, G., & Gil-Alana, L. A. (2024). Persistence in Australian tourism employment industries. *Current Issues in Tourism*, *27*(5), 754--767.
+
+Solarin, S. A., Claudio-Quiroga, G., & Gil-Alana, L. A. (2026). Persistence of tourism electronic card transaction expenditure: implications for policy interventions. *Journal of Policy Research in Tourism, Leisure and Events*, 1--13.
+
+Song, H., Dwyer, L., Li, G., & Cao, Z. (2012). Tourism economics research: A review and assessment. *Annals of Tourism Research*, *39*(3), 1653--1682.
+
+Song, H., & Witt, S. F. (2006). Forecasting international tourist flows to Macau. *Tourism Management*, *27*(2), 214--224.
+
+Sowell, F. (1992). Maximum likelihood estimation of stationary univariate fractionally integrated time series models. *Journal of Econometrics*, *53*(1--3), 165--188.
+
+Stotten, R., Schermer, M., & Wilson, G. A. (2021). Lock-ins and community resilience: Two contrasting development pathways in the Austrian Alps. *Journal of Rural Studies*, *84*, 124--133.
+
+Sun, X., Wandelt, S., & Zhang, A. (2020). How did COVID-19 impact air transportation? A first peek through the lens of complex networks. *Journal of Air Transport Management*, *89*, 101928.

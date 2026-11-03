@@ -218,3 +218,8 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Quarto and local publishing state
+.quarto/
+_site/
+.netlify/

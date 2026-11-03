@@ -1,0 +1,1516 @@
+---
+title: "PERSISTENCE DYNAMICS OF REGIONAL TOURISM DEMAND IN SPAIN"
+abstract: |
+  This study examines the evolution of persistence in regional tourism demand across Spain following the COVID-19 pandemic. The analysis estimates fractional integration models with trends and seasonal components using monthly hotel arrivals from 1999 to 2025. Pre-pandemic tourism exhibited moderate persistence, with shocks ultimately mean-reverting across most regions. In contrast, estimates for the extended sample through August 2025 indicate systematically higher values of the fractional differencing parameter (d), particularly for non-resident tourism, implying slower mean reversion and more prolonged shock effects. Island and northern coastal regions register the largest increases in persistence, whereas domestic tourism remains comparatively stable. Overall, the results suggest that the inclusion of the COVID-19 period is associated with changes in the persistence and adjustment dynamics of regional tourism demand. The observed patterns are consistent with longer-lasting shock effects in some regions and visitor segments, especially in non-resident tourism flows.
+keywords: ["Tourism Persistence", "Spain", "Fractional Integration", "COVID-19", "Regional Tourism"]
+number-sections: false
+---
+
+**Keywords:** Tourism Persistence; Spain; Fractional Integration, COVID-19, Regional Tourism
+
+**JEL Classification:** C22
+
+# 1. Introduction
+
+Tourism is one of the most dynamic yet shock-sensitive sectors of the global economy, and Spain exemplifies this duality with particular intensity. As a country where tourism accounts for over 12% of GDP (INE, 2024) and constitutes a central pillar of national and regional development, understanding how tourist flows respond to and recover from major disturbances is crucial for both economic analysis and policy design.
+
+The COVID-19 pandemic provided an unprecedented natural experiment in this regard. Between 2020 and 2021, international arrivals to Spain fell by more than 70% (INE, 2022), marking the deepest collapse in modern tourism history in the country. Although activity gradually resumed, the recovery has been markedly uneven: domestic tourism rebounded quickly as mobility restrictions eased, while international demand remained fragile and highly sensitive to regulatory, behavioral, and transport-related uncertainties. These divergent patterns may be associated with differences in regional tourism structures, including variations in market exposure, transport connectivity, and dependence on international mobility, and it raises a fundamental question: was the pandemic period associated only with temporary deviations in tourism flows, or also with changes in the observed persistence and adjustment dynamics of regional tourism demand? More specifically, have the observed patterns of mean reversion and seasonality that characterized pre-pandemic tourism dynamics reasserted themselves, or do shocks now exhibit more persistent effects over time? Addressing these questions requires analytical tools capable of distinguishing transitory deviations from more persistent changes in the statistical properties of the series, moving beyond conventional difference-stationary or trend-stationary models.
+
+Fractional integration offers precisely such a framework. By allowing the differencing parameter $(d)$ to take non-integer values, it captures long memory, a property whereby shocks decay slowly and correlations persist across long horizons. In tourism literature, fractional models have proven valuable for analyzing persistence in demand (Assaf et al., 2011; Dutta et al., 2021; Gil-Alana, 2005; Gil-Alana et al., 2020), expenditures (Solarin et al., 2026), and employment (Solarin et al., 2024), often revealing that demand adjusts more gradually than implied by classical autoregressive schemes. However, empirical applications remain limited in two important respects. First, few studies consider fractional processes with seasonality, despite the inherently periodic structure of tourism data. Second, analyses of persistence rarely differentiate between residents and non-residents, even though these segments respond to distinct economic and behavioral drivers. Moreover, the pandemic period provides an opportunity to assess whether the magnitude and behavior of persistence parameters changed over time.
+
+This study extends the analysis of persistence in tourism demand by estimating a fractional model that incorporates trends and seasonal disturbances for monthly tourist arrivals across Spain's seventeen regional autonomous communities, separately for residents and non-residents, and for two observation windows: one ending in December 2019, and another extending through August 2025. Using the tests of Robinson (1994) within the parametric framework of Gil-Alana and Robinson (1997), we derive confidence intervals for the order of integration under alternative deterministic specifications. The comparison across regions, visitor types, and time horizons provides a detailed map of how the pandemic reshaped the persistence structure of tourism in Spain.
+
+The contribution of this paper is threefold. First, it provides the most up-to-date assessment of fractional persistence in Spanish regional tourism, covering both residents and non-residents markets. Second, by explicitly contrasting the pre-pandemic with an extended sample through August 2025, it examines whether the inclusion of the COVID-19 period is associated with changes in long-memory parameters across regions and visitor segments. Third, it situates these empirical findings within a broader discussion of regional resilience~~,~~ by interpreting differences in the fractional parameter $(d)$ as reduced-form evidence of heterogeneous adjustment dynamics. Regions with higher $(d)$ values exhibit slower mean reversion and more prolonged shock effects, whereas regions with lower $(d)$ values display faster stabilization and shorter-lived shock effects. These interpretations are used to inform, rather than directly test, broader discussions of regional adjustment and resilience.
+
+The rest of the paper is structured as follows. Section 2 develops the theoretical background, reviewing the relevant literature on persistence, fractional integration, and tourism resilience. Section 3 describes the dataset and Section 4 outlines the econometric methodology and testing strategy. Section 5 reports the empirical results. Section 6 discusses the broader implications of the findings for the interpretation of regional adjustment dynamics and tourism resilience. Section 7 concludes with a synthesis of the main insights, limitations, and directions for future research.
+
+# 2. Theoretical Background
+
+## 2.1. Persistence and Long Memory in Economic Time Series
+
+In macroeconomic and regional economic analysis, persistence refers to the degree to which the effects of shocks to a variable endure over time. Classical debates centered on whether economic series were stationary or possessed a unit root (Nelson & Plosser, 1982; Perron, 1989), effectively imposing a binary distinction between short memory $I(0)$ or difference-stationary $I(1)$ processes. Within this framework, shocks were interpreted either as transitory deviations from equilibrium or as permanent shifts in the stochastic trend. Although analytically convenient, this dichotomy constrained the representation of adjustment dynamics to two extreme cases.
+
+Subsequent empirical work revealed that many macroeconomic and sectoral variables exhibit hyperbolically decaying autocorrelations rather than the exponential decline assumed by autoregressive models. Such dynamics suggest that shocks may dissipate gradually without becoming fully permanent. In these contexts, persistence cannot be adequately described through a simple stationary versus unit-root classification.
+
+Fractional integration generalized the differencing parameter $(d)$ to take non-integer values (Granger & Joyeux, 1980). When $0 < d < 1$, the process displays long memory, meaning that shocks decay slowly and the series may require prolonged periods to revert toward its underlying trajectory. The fractional parameter thus provides a continuous measure of shock durability, bridging the gap between stationary (e.g., ARMA) behavior and unit-root (ARIMA) dynamics, providing a more realistic representation of economic adjustment.
+
+Methodological advances strengthen fractional estimation. The log-periodogram regression estimator of Geweke and Porter-Hudak (1983) and the parametric maximum likelihood approach of Sowell (1992) enabled consistent estimation of fractional processes. Robinson (1994) developed an efficient Lagrange Multiplier $(LM)$ test for arbitrary values of $(d)$, while Gil-Alana and Robinson (1997) extended the framework to include deterministic components and seasonal structures. Applications in macroeconomics and finance (Baillie, 1996; Caporale & Gil-Alana, 2002; Cuestas & Gil-Alana, 2016) demonstrate that long-memory models frequently outperform traditional specifications when analyzing slow-moving processes or series subject to structural disturbances. These methodological foundations are particularly relevant for sectors characterized by structural interdependencies and gradual re-coordination dynamics. Tourism represents a paradigmatic case in which fractional integration methods are particularly well suited (Caporale et al., 2023; Gil-Alana & Huijbens, 2018).
+
+## 2.2. Persistence in Tourism Economics
+
+Tourism systems exhibit temporal regularities and structural rigidities that render persistence particularly meaningful in this sector. Tourism flows are shaped by pronounced seasonality, sensitivity to external shocks, infrastructural coordination, and path-dependent specialization. Consequently, persistence in tourism arrivals reflects not only stochastic properties of time series but also behavioral and structural features of destination economies (Gil-Alana & Poza, 2022; Payne et al., 2023).
+
+### Behavioral and Structural Demand Inertia
+
+Persistence has been recognized in tourism demand theory through mechanisms such as repeat visitation, destination loyalty, and habit formation. Past visitation influences future travel decisions through accumulated experience, brand familiarity, and network effects (Alegre & Cladera, 2006; Assaker & Hallak, 2013). Macroeconomic variables such as income and consumer behaviors also influence tourism flows with lagged adjustment, reinforcing inertia in demand responses (Song et al., 2012).
+
+At the aggregate level, these behavioral mechanisms translate into observable dynamic patterns. Adjustment costs in accommodation capacity, gradual reactivation of transport routes, and slow reallocation of resources following downturns contribute to prolonged deviations from trend. Persistence therefore reflects embedded structural frictions within tourism systems, complementing its stochastic interpretation.
+
+### Seasonality and Temporal Coordination
+
+Seasonality is a defining feature of tourism activity. Booking patterns, meteorological conditions, transport capacity, and pricing strategies generate recurring cycles that are both predictable and gradually evolving. Seasonal unit-root procedures (Dickey et al., 1984; Hylleberg et al., 1990) and their fractional extensions (Arteche & Robinson, 2000; Gil‐Alana & Robinson, 2001; Reisen et al., 2006) allow for the possibility that seasonal cycles themselves display long memory. Although the present study models seasonality parsimoniously through autoregressive components, seasonal coordination mechanisms remain central: disruptions during peak periods can propagate across subsequent cycles, reinforcing persistent dynamics.
+
+### Stochastic Persistence in Tourism Demand
+
+Research on tourism demand has traditionally focused on elasticity estimation, forecasting accuracy, and behavioral determinants using autoregressive frameworks (Nguyen, 2021; Song & Witt, 2006). Unit-root and structural-break analyses reveal substantial heterogeneity across destinations and market segments.
+
+Fractional integration has been increasingly applied to tourism flows. Gil-Alana (2005) demonstrated long memory in arrivals and expenditures, implying that shocks, such as financial crises or policy changes, decay gradually rather than dissipating quickly Applications to hotel occupancy (Claudio-Quiroga et al., 2024), tourism productivity (Assaf & Tsionas, 2018), and regional tourism flows (Cuñado et al., 2008) confirm that shocks often dissipate gradually rather than instantaneously. These findings indicate that shocks in tourism commonly display durable adjustment patterns consistent with long-memory behavior.
+
+Despite these advances, relatively few studies integrate fractional behavioral inertia, seasonality, stochastic persistence, and segment-specific heterogeneity within a unified framework. Moreover, the interaction between structural characteristics and dynamic persistence therefore remains insufficiently explored.
+
+### Structural Development and Regional Heterogeneity
+
+Persistence also interacts with broader structural theories of tourism development. Within the Tourism Destination Life Cycle framework (Agarwal, 2002; Butler, 1980, 2025; Getz, 1992), destinations evolve through stages characterized by differing maturity, infrastructural saturation, and adaptive capacity. More mature destinations may exhibit greater rigidity, potentially lengthening recovery dynamics after shocks.
+
+Institutional lock-in and path dependence further shape adjustment processes (Arthur, 1989; Grabher, 1993; Martin & Sunley, 2006; Stotten et al., 2021). Tourism regions often develop complementarities among transport hubs, accommodation clusters, labor specialization, and governance routines. While these complementarities enhance efficiency in stable periods, they may impede rapid reorientation when systemic disruptions occur.
+
+Regional resilience provides an integrative lens (Biggs et al., 2012; Martin, 2012; Muštra et al., 2023; Simmie & Martin, 2010). In this context, persistence captures the temporal dimension of recovery: higher persistence corresponds to slower re-stabilization and more durable shock effects, whereas lower persistence reflects faster absorption and re-coordination.
+
+In this study, these theoretical constructs are interpreted through the lens of persistence dynamics. Specifically, path dependence is reflected in the degree to which past shocks influence current values of tourism demand, captured by the fractional differencing parameter $(d)$. Institutional lock-in is understood as a structural constraint on system adaptability, which may be reflected in slower mean reversion (higher $d$). Similarly, within the Tourism Area Life Cycle framework, more mature destinations are expected to exhibit greater rigidity and thus higher persistence. While these constructs are not directly tested, they provide an analytical bridge between observed statistical properties and underlying structural mechanisms.
+
+## 2.3. Shock Transmission Mechanisms in Tourism
+
+The COVID-19 pandemic, while exogenous in origin, generated heterogeneous economic transmissions across tourism systems. The magnitude and persistence of its effects depended on how the shock intersected with pre-existing structural configurations of specific destinations (Brouder, 2020).
+
+Exposure structure shaped initial vulnerability. Destinations differed in their reliance on international versus domestic markets, long-haul versus short-haul travel, and in the diversification of source-country portfolios. Regions heavily dependent on international air connectivity were disproportionately affected by border closures and flight suspensions (Sun et al., 2020), whereas destinations with stronger domestic bases benefited from substitution effects once internal mobility returned.
+
+Mobility dependency and transport connectivity conditioned adjustment. Tourism demand is co-produced through coordinated aviation networks, accommodation capacity, and local service provision. Recovery required synchronized reactivation of transport capacity and restoration of traveler confidence (Gössling et al., 2020), leading to staggered rebound trajectories.
+
+Policy-mediated restrictions and behavioral responses introduced additional heterogeneity. Variations in lockdown timing, border controls, vaccination rollout, and perceived health risks influenced recovery paths (Neuburger & Egger, 2021). These mechanisms demonstrate that while the pandemic shock was exogenous, its persistence effects were filtered through the structural characteristics of tourism systems. Heterogeneous long-memory dynamics across regions and visitor types may therefore be associated with differentiated transmission channels rather than uniform demand contraction.
+
+# 3. Data and Context
+
+## 3.1. Data Sources and Coverage
+
+The empirical analysis draws on monthly microdata from the Hotel Occupancy Survey (HOS), published by Spain's National Statistics Institute (Instituto Nacional de Estadística, INE). The HOS is the official and most robust statistical operation for measuring hotel activity and analyzing regional tourism flows across Spain.
+
+The INE also publishes a complementary dataset for tourist apartments available on a monthly basis since January 2000. However, tourist apartments represent a substantially smaller share of official accommodation demand than hotels, accounting for approximately 10--25% of the hotel segment in recent years, depending on the market segment and region. In order to maintain analytical clarity and comparability across regions and over time, the empirical analysis therefore focuses on the hotel accommodation segment, which captures the dominant component of Spain's recorded tourism demand. While the expansion of alternative accommodation forms constitutes an important structural development in tourism markets, incorporating additional accommodation categories would significantly complicate the empirical design without materially altering the aggregate persistence dynamics captured in the primary accommodation sector.
+
+Data were extracted for the period January 1999 to August 2025, providing a balanced panel of 320 monthly observations per region and visitor type. This extensive time window allows for the reliable estimation of fractional processes and covers the entire pre- and post-pandemic cycle.
+
+The dataset distinguishes between resident and non-resident arrivals, a segmentation that is theoretically relevant in the context of the COVID-19 shock. International flows were directly constrained by border closures and disruptions to cross-border air connectivity, whereas domestic tourism depended primarily on internal mobility regimes and national policy measures. This differentiation enables the empirical analysis to examine whether persistence dynamics differ across visitor types, rather than assuming homogeneous responses to the pandemic shock.
+
+The analysis covers Spain\'s entire regional administrative structure, including seventeen regions. While two autonomous cities (Ceuta and Melilla) are also included in the HOS, they were excluded from comparative interpretations due to their limited tourism volumes to maintain homogeneity. The resulting dataset effectively represents more than 99% of Spain\'s hotel-recorded tourism flows in the official accommodation statistics, ensuring high territorial coverage and comparability across regions.
+
+## 3.2. Variables and Transformations
+
+For each region, the primary variable analyzed is the number of travelers arrivals, disaggregated by 1) all travelers (aggregate), 2) residents in Spain, and 3) non-residents.
+
+Given the heterogeneity in absolute volumes across regions and the multiplicative nature of tourism growth, all series are transformed into natural logarithms. This stabilizes variance, allows for proportional interpretation of shocks, and improves the suitability of the data for fractional integration analysis.
+
+## 3.3. Regional and Segmental Heterogeneity
+
+Spain's tourism geography is characterized by strong regional asymmetries, which are central to understanding the spatial variation in persistence. These structural differences imply that the degree of persistence---and changes in persistence across periods---may vary systematically across regions and visitor segments.
+
+The reliance of regions on international versus domestic demand creates different exposure profiles to external shocks:
+
+- **Island regions** (Balearic Islands, Canary Islands) are heavily reliant on international visitors, whose mobility depends on air transport and external economic conditions.
+
+- **Coastal regions** (Andalusia, Valencia, Murcia, Galicia) combine significant international inflows with substantial domestic demand, offering a more balanced mix.
+
+- **Inland regions** (Castilla--La Mancha, Castilla y León, Aragón, Extremadura, La Rioja) rely predominantly on resident tourism, making them less exposed to external global shocks.
+
+Seasonal profiles also differ significantly across regional types:
+
+- **Islands and coastal destinations** experience pronounced summer peaks due to beach tourism.
+
+- **Urban regions** (Madrid, Catalonia, the Basque Country) exhibit more distributed, year-round tourism patterns driven by business and cultural travel.
+
+- **Rural and interior regions** often display lower overall seasonality but greater exposure to domestic weekend travel patterns.
+
+These structural differences imply that the degree of persistence may vary systematically across regions and visitor segments. For instance, regions with high exposure to international mobility may display more pronounced long-memory effects, particularly after a global shock such as COVID-19.
+
+# 4. Methodology
+
+The objective of this study is to measure the persistence of tourism flows across Spain's regions and to assess how this persistence evolved before and after the COVID-19 shock. Persistence is understood as the degree to which current observations depend on past values and, therefore, provides information about the speed and pattern with which the series converges back to equilibrium after a shock. Traditional approaches typically assess persistence through simple autoregressive structures---most often an $AR(1)$ model or, more generally, the sum of coefficients in a higher-order $AR(p)$ model. Although widely used, these models present several limitations for tourism series. They impose an exponentially fast decay of autocorrelations, which can be overly restrictive when the data exhibit slow reversion to the mean. They also force a binary distinction between stationary $I(0)$ and unit-root $I(1)$ behavior, requiring first differentiation whenever non-stationarity is suspected. Finally, standard AR models do not adequately accommodate the strong seasonal patterns characteristic of tourism flows.
+
+To address these limitations, we adopt a fractional integration framework that allows for a continuum of persistence levels, the inclusion of deterministic components, and the explicit modelling of monthly seasonality. Specifically, assuming that *y(t)* is the observed data (in log) for each region, we consider the following model,
+
+$$\begin{array}{r}
+y(t)\  = \ \ \alpha\  + \ \ \beta\ t\ \  + \ \ x(t),\#(1)
+\end{array}$$
+
+$$\begin{array}{r}
+(1 - L)^{d}x(t) = \ \ u(t),\#(2)
+\end{array}$$
+
+$$\begin{array}{r}
+u(t)\  = \ \ \rho\ u(t - 1) + \ \ \varepsilon(t),\#(3)
+\end{array}$$
+
+where *α* denotes an intercept, β a linear time trend, $L$ is the lag operator, such that $L^{k}x(t) = \ x(t - k)$; and *d* is the fractional differencing parameter governing the degree of persistence. The error term $u(t)$ is modelled as a seasonal $AR(1)$ with monthly periodicity, capturing residual seasonal dependence after fractional differencing. The innovations are assumed to follow a white-noise process.
+
+The key parameter of interest is the fractional differencing order $d$. When $d = 0$, the series is short-memory; when $0 < d < 1$, shocks decay slowly and the process exhibits long memory; when $d\  \geq 0.5$, it becomes nonstationary, and when $d \geq 1$, the series is non-mean-reverting. This flexibility allows the model to capture a wide range of adjustment behaviors, from rapid reversion to highly persistent responses, without forcing discrete classifications. Accordingly, $(d)$ is interpreted here as a reduced-form measure of persistence and adjustment speed; it does not, by itself, identify the structural mechanisms generating these dynamics.
+
+Inference on $d$ is conducted using the Lagrange Multiplier (LM) test proposed by Robinson (1994), which evaluates the null hypothesis:
+
+$$\begin{array}{r}
+H_{o}:\ \ \ d\  = \ \ d_{o},\#(4)
+\end{array}$$
+
+for any real $d_{0}$ in the model above. This test has several advantages that make it particularly suitable for this study. First, because it is based on the Lagrange Multiplier (LM) principle, it has standard null and local limiting distributions, facilitating straightforward inference even near the non-stationarity boundary. Second, the ability to test the null for arbitrary values of $d$ eliminates the need for preliminary differencing, a practice that can distort persistence estimates. Third, the test is efficient in the Pitman sense against local departures from the null, ensuring high power in detecting local changes in persistence. The set of values of $d$ for which the null cannot be rejected at conventional significance levels forms a confidence interval that summarizes the admissible degree of persistence for each series. Examining multiple deterministic specifications enables a robustness assessment, as the interaction between long memory and deterministic components can influence inference.
+
+# 5. Empirical Results
+
+The results reveal substantial heterogeneity in the persistence of tourism flows across Spanish regions, across visitor types, and---most importantly---across time. A consistent picture emerges, as the COVID-19 shock generated a significant shift in the long-run dynamics of both international and domestic tourism, increasing significantly the degree of integration of international tourism in most of the regions.
+
+## 5 .1. Pre-Pandemic Persistence (Data Ending in December 2019)
+
+We estimated the differencing parameter $d$ (and the 95% confidence bands) for the three classical cases of i) no deterministic terms (i.e., imposing α = β = 0 a priori in equation (1); ii) with only an intercept (i.e., with β = 0 a priori), and iii) with a constant and a linear time trend, and selected the correct specification for each series based on the significance of the estimated coefficients. The estimates for the total number of arrivals using data up to December 2019 are reported in Table 1.
+
+The first thing we observe is that the time trend is required in all except one region (Balearic Islands) and that the estimated coefficients are significantly positive in all cases. We also observe that most fractional differencing parameters $d$ fall within the 0.13--0.67 range, consistent with long memory but relatively fast mean reversion. Northern and inland regions such as Cantabria (0.13), Asturias (0.19), Castilla and Leon (0.22), La Rioja (0.24) and Aragon (0.28) display the lowest degrees of persistence, reflecting their smaller volumes of international tourism and more diversified or domestically anchored visitor bases. By contrast, island regions show higher---but still moderate---persistence, with the Balearic Islands (0.54) and the Canary Islands (0.59), along with Madrid (0.67), at the upper end of the distribution. These patterns are consistent with the stronger dependence of these regions on international air connectivity. This high level of persistence, reflected in higher estimated values of the fractional parameter $(d)$ may be consistent with slower adjustment processes in regions characterized by stronger dependence on international mobility and more complex tourism coordination structures. Other large metropolitan destinations and coastal areas such as the Basque Country (0.47), Andalucia (0.44), Galicia (0.42), Murcia (0.41) Valencia (0.37), Navarra (0.35) and Catalonia (0.35) fall in the middle range, reflecting diversified markets that combine international and domestic segments. Overall, the pre-COVID estimates point to a system in which shocks to arrivals were long-lasting but ultimately mean-reverting, with relatively bounded persistence. The seasonal AR coefficients are high in all cases, being above 0.9 in the majority of the series; the highest value corresponds to Balearic Islands, with ρ = 0.992, reflecting the seasonal nature of tourism in this region.
+
+**\[Insert Tables 1 - 3 about here\]**
+
+Tables 2 and 3 are similar to Table 1 but for resident and non-resident arrivals respectively. Starting with residents, in Table 2, we notice a slight reduction in the order of integration in comparison with Table 1 (total arrivals), particularly relevant the case of the Canary Islands (with a reduction from 0.59 in the case of total arrivals to 0.31 for residents only). The highest orders of integration correspond to Madrid and the Balearic Islands (with $d = 0.52$), followed by the Basque Country (0.46), while the lowest values are observed in Cantabria (0.13), followed by Asturias (0.17) and Castilla and Leon (0.19).
+
+On the other hand, for non-resident arrivals (see Table 3), the values of $d$ are generally higher than in Tables 1 and 2, meaning a higher persistence and longer effects of shocks. The exceptions are now Navarra, the Basque Country and La Rioja where the estimate of $d$ are lower than with the total arrivals, and particularly Balearic Islands (where the estimated order of integration $d$ moves from 0.54 for total arrivals to 0.17 for non-resident arrivals). On the other extreme, Canary Islands and Madrid display the highest orders of integration. Seasonality seems also to be slightly higher with non-resident arrivals. The higher degree of persistence observed for non-resident tourism may be consistent with interpretations derived from the Tourism Destination Life Cycle framework, in which more mature destinations may exhibit slower adjustment dynamics following major shocks.
+
+## 5.2. Overall Persistence (Data Ending in August 2025)
+
+The estimated persistence dynamics differs noticeably when the estimation window is extended through August 2025 (Tables 4 -- 6). A consistent finding across the three tables is that linear time trends become statistically unnecessary in all specifications. This pattern may reflect changes in the observed trend and persistence dynamics associated with the inclusion of the COVID-19 period in the sample. Seasonality also changes noticeably in the extended sample. Thus, the values of the seasonal AR coefficient are now much smaller particularly for the total and resident arrivals (Tables 4 and 5 respectively).
+
+Focusing now on the differencing parameter $d$, across virtually all regions, the order of fractional integration increases substantially, particularly for the non-resident arrivals (Table 6), with many values of $d$ exceeding 0.50--0.70. Furthermore, island and northern coastal regions display the strongest persistence: Balearic Islands (0.76), La Rioja (0.76), Asturias (0.73), Cantabria (0.73), Navarra (0.69) and Galicia (0.61), all of which exhibit very slow mean reversion, implying that shocks dissipate only gradually over time. Mainland coastal regions also show notable increases in persistence.
+
+With respect to seasonality, the values are much smaller than in the pre-COVID data, not exceeding 0.5 in any region except for Balearic Islands (0.523 for total and 0.559 for non-residents arrivals).
+
+**\[Insert Tables 4 -- 6 about here\]**
+
+## 5.3. Changes in Estimated Persistence Across Observation Windows
+
+Changes in estimated persistence across regions can be examined by comparing the pre-pandemic sample (ending in December 2019) with the extended sample (ending in August 2025). It should be noted that the extended sample through 2025 incorporates multiple phases associated with the COVID-19 period, including collapse, reopening, and recovery dynamics. Accordingly, differences in estimated persistence between the pre-pandemic and extended samples might be interpreted as changes associated with the inclusion of the COVID-19 period as a whole, rather than as identification of a specific structural break mechanism. The results, reported in Table 7 (comparisons across samples), can be summarized as follows:
+
+**\[Insert Table 7 about here\]**
+
+- **Sharp increases in coastal and northern regions.** Several northern and coastal regions experience very significant increases in persistence, indicating a shift from moderate to significantly more prolonged adjustment processes. Examples of these regions are Asturias (AST), Cantabria (CAN), La Rioja (RIO), or Castilla and Leon (CyL). In Cantabria, for instance, the estimated value of $d$ increased from 0.13 to 0.50, from 0.13 to 0.48 and from 0.30 to 0.73, for total, resident, and non-resident arrivals, respectively. Similarly, the increase in Asturias (AST) was from 0.19 to 0.42 (total arrivals), from 0.17 to 0.40 (residents) and from 0.26 to 0.73 (non-residents). Other regions with a similar pattern include Aragon (ARA), Galicia (GAL), and Navarra (NAV). These changes suggest that regions previously characterized by moderate long-memory dynamics now display much more prolonged adjustment processes.
+
+- **Island regions experience no amplification in the long-memory dynamics.** For both the Balearic Islands (BAL) and the Canary Islands (CAN), there were no significant differences in persistence when comparing the pre-COVID data (ending December 2019) and the extended data (ending August 2025) across any of the three types of arrival data, with the single exception of non-resident arrivals in the Balearic Islands. Here, the change is relevant, from 0.17 before COVID to 0.76 after COVID, underscoring the vulnerability of Balearic insular economies to global mobility disruptions.
+
+- **Metropolitan regions, and Madrid in particular, show a significant reduction in the long-memory parameter (**$\mathbf{d}$**).** Madrid (MAD) represents a singular case study with a substantial reduction across all three types of data. For total arrivals, the estimate reduces from 0.67 to 0.35; for residents, from 0.52 to 0.32, while for non-residents from 0.75 to 0.45. A reduction in $d$ also occurs in the Basque Country (PVA) (for total and resident arrivals, but not non-resident) and in Catalonia (CAT) (for non-residents). However, the differences in Catalonia are less significant, perhaps reflecting the stabilizing effect of its diversified, year-round visitor base.
+
+- **Regions along the Mediterranean coast register small changes in persistence.** Regions such as Andalucia (AND), Murcia (MUR) and Valencia (VAL)---with the exception of residents' arrivals in Valencia---present a small reduction in $d$. Conversely, Extremadura (EXT) displays a slight increase, which is moderate for non-resident arrivals in Castilla-La Mancha (CMA). These differences in $d$ estimates are not statistically significant in the majority of cases.
+
+Additional recursive estimations of the fractional differencing parameter $(d)$, obtained by sequentially extending the sample beginning in January 2020, indicate that the largest changes in estimated persistence emerge immediately following the onset of the pandemic period. This suggests that the observed increase in persistence is not solely attributable to mechanical sample-length effects.
+
+These results are consistent with persistence patterns sometimes associated in the literature with tourism hysteresis, in the sense that shocks appear to exhibit more prolonged effects over time. The observed cross-regional distribution of persistence is also consistent with differences in the underlying characteristics of Spain's tourism system, including variations in market composition and exposure to international tourism flows. These spatial patterns suggest that the observed differences in persistence may be associated with regional characteristics such as market composition, transport connectivity, seasonality, and exposure to international tourism dynamics.
+
+# 6. Discussion and Implications 
+
+The discussion that follows interprets the empirical findings through the lens of persistence dynamics, where the fractional differencing parameter $(d)$ serves as a reduced-form indicator of adjustment speed and structural inertia. In this context, higher values of $(d)$ reflect slower mean reversion and more prolonged effects of shocks. The theoretical constructs introduced in Section 2---such as path dependence, institutional lock-in, and destination maturity---are therefore used as interpretative frameworks to contextualize the observed persistence patterns.
+
+The empirical results reveal marked changes in the estimated persistence of tourism flows across Spain's regions when the COVID-19 period is included in the analysis. While long-memory behavior characterizes both resident and non-resident tourism, its magnitude, evolution, and spatial distribution differ across visitor segments and territories. The following discussion synthesizes these findings and examines their implications for the interpretation of regional adjustment dynamics and tourism resilience.
+
+## 6.1. How COVID-19 Reshaped the Persistence of Tourism Demand
+
+Three main insights emerge from the comparative analysis of persistence dynamics across regions and visitor types. First, prior to the pandemic, non-resident tourism displayed moderate persistence, with estimated values of the fractional differencing parameter $(d)$ indicating long memory but eventual mean reversion. In contrast, estimates for the extended sample through 2025 indicate systematically higher values of $(d)$ across most regions, particularly for non-resident arrivals, implying slower mean reversion and more prolonged effects of shocks. This pattern is consistent with a lengthening of the temporal adjustment process in international hotel-based tourism flows.
+
+Second, this evolution is highly asymmetric across visitor segments. Domestic tourism reveals a comparatively stable persistence dynamics, with estimated values of $(d)$ remaining within a relatively narrow range even when post-pandemic observations are included. By contrast, non-resident tourism exhibits a more substantial increase, suggesting that shocks to international tourism demand dissipate more slowly over time. These differences are consistent with the distinct exposure of domestic and international tourism to mobility restrictions and disruptions in cross-border travel during the pandemic period.
+
+Third, persistence dynamics also exhibit a spatial dimension. Regions with stronger exposure to international tourism---particularly island and northern coastal destinations---display larger increases in the persistence parameter $(d)$, whereas inland and metropolitan regions generally show more moderate changes. These spatial patterns suggest that observed differences in persistence may be associated with regional characteristics such as market composition, transport connectivity, seasonality, and exposure to international tourism dynamics.
+
+In this context, the observed increase in persistence in several regions is consistent with interpretations in which major shocks are associated with longer adjustment processes in tourism demand. In particular, higher values of $(d)$ imply slower mean reversion and more prolonged deviations from pre-existing trajectories. Madrid represents a contrasting pattern (see Table 7), displaying relatively high pre-pandemic persistence followed by a decline in the estimated persistence parameter in the extended sample. This reduction in $(d)$ is consistent with faster mean reversion and shorter-lived shock effects compared to the pre-pandemic period. These interpretations should nevertheless be understood as indicative rather than causal.
+
+## 6.2. Implications for Tourism Resilience and Regional Adjustment
+
+The observed variation in persistence dynamics provides a useful basis for interpreting differences in the temporal dimension of regional adjustment. In this context, the fractional differencing parameter $(d)$ can be understood as an indicator of the speed at which tourism demand reverts to its underlying trajectory following a shock. Higher values of $(d)$ imply more prolonged adjustment processes and slower mean reversion, whereas lower values indicate faster stabilization and shorter-lived effects of disturbances.
+
+Regions characterized by higher persistence---most notably island and northern coastal economies---display more prolonged deviations from trend when the COVID-19 period is included in the analysis. In these contexts, adjustment processes appear to unfold over longer time horizons, reflecting slower re-coordination dynamics following disruptions. By contrast, regions with lower or more stable persistence parameters exhibit comparatively faster adjustment dynamics. These findings suggest that tourism systems across Spain do not respond uniformly to large shocks, but instead display heterogeneous persistence profiles across territories and visitor segments.
+
+It is important to highlight that the present analysis does not evaluate specific policy interventions, nor does it establish causal relationships between persistence dynamics and underlying structural factors. The fractional parameter $(d)$ captures reduced-form properties of tourism adjustment dynamics, and the implications discussed above should therefore be interpreted as indicative rather than prescriptive.
+
+Finally, it is important to note that the empirical analysis is based on hotel accommodation data, which ensures long-run comparability and methodological consistency over the 1999--2025 period. The expansion of short-term rental platforms in recent years may have influenced the composition of accommodation demand in certain regions, particularly after the pandemic period. While this does not affect the internal consistency of the persistence estimates, it suggests that part of the observed heterogeneity may reflect structural reallocation across accommodation types. Future research incorporating integrated hotel and non-hotel datasets could provide further insight into accommodation-specific persistence dynamics.
+
+# 7. Conclusions
+
+This study examined the persistence of tourism flows across Spain's regions using fractional integration models, comparing the dynamics of resident and non-resident arrivals in the presence of the COVID-19 shock. By estimating the fractional differencing parameter $(d)$ across regions, visitor types, and alternative specifications, the analysis provides a comprehensive assessment of the long-memory properties of tourism demand and their evolution over time. In this framework, the parameter $(d)$ captures the degree of persistence in the data, offering a quantitative measure of the speed at which tourism systems revert to their underlying trajectory following unprecedented global disruption.
+
+The results indicate that the inclusion of the COVID-19 period in the sample is associated with changes in the behavior of tourism in Spain associated with a systematic increase in the estimated values of $(d)$ across most regions, particularly for non-resident arrivals. This pattern implies slower mean reversion and more prolonged effects of shocks in international tourism demand. By contrast, domestic tourism displays comparatively stable persistence dynamics, with estimated values of $(d)$ remaining within a narrower range. In addition, the analysis reveals changes in other statistical properties of the series, including a reduced role of deterministic trends and a decline in the strength of seasonal components in the extended sample.
+
+The observed variation in persistence also exhibits a clear spatial dimension. Regions with stronger exposure to international mobility---particularly island and northern coastal destinations---tend to show larger increases in the persistence parameter, whereas metropolitan and inland regions experience more moderate changes. These differences suggest that tourism systems across regions are characterized by heterogeneous adjustment dynamics, as reflected in their persistence profiles.
+
+Within this empirical context, the results are consistent with interpretations in which major shocks are associated with changes in the speed of adjustment of tourism demand. In particular, the higher persistence estimates observed in the extended sample is indicative of longer recovery paths in several regions. These dynamics are in line with theoretical perspectives that emphasize the role of structural inertia, path dependence, and system rigidity in shaping adjustment processes. However, the present analysis does not directly test these mechanisms, and therefore the interpretation of persistence patterns in terms of underlying structural factors should be understood as indicative rather than causal.
+
+More broadly, the findings highlight the usefulness of fractional integration methods for capturing the temporal dimension of tourism dynamics. By allowing for a continuum of persistence behaviors, the approach provides a flexible framework to analyze how shocks propagate and dissipate over time, offering insights that go beyond conventional stationary or unit-root representations.
+
+At the same time, several limitations point to avenues for future research. First, the analysis focuses on tourism arrivals; and it remains an open question whether similar persistence patterns characterize other dimensions of tourism activity, such as expenditures or value added. Second, the modelling framework treats regions independently and does not account for potential spatial interdependencies or spillovers effects across destinations. Third, while the persistence parameter $(d)$ provides a useful reduced-form indicator of adjustment dynamics, further work is required to identify the structural determinants underlying the observed patterns, including the role of transport connectivity, market composition, and changes in accommodation structures. Extending the analysis to spatial fractional models, fractional cointegration frameworks, or structurally enriched specifications could provide a deeper understanding of the factors underlying these persistence dynamics.
+
+# References
+
+Agarwal, S. (2002). Restructuring seaside tourism: The resort lifecyle. *Annals of Tourism Research*, *29*(1), 25--55.
+
+Alegre, J., & Cladera, M. (2006). Repeat visitation in mature sun and sand holiday destinations. *Journal of Travel Research*, *44*(3), 288--297.
+
+Arteche, J., & Robinson, P. M. (2000). Semiparametric inference in seasonal and cyclical long memory processes. *Journal of Time Series Analysis*, *21*(1), 1--25.
+
+Arthur, W. B. (1989). Competing technologies, increasing returns, and lock-in by historical events. *The Economic Journal*, *99*(394), 116--131.
+
+Assaf, A. G., Pestana Barros, C., & Gil-Alana, L. A. (2011). Persistence in the short-and long-term tourist arrivals to Australia. *Journal of Travel Research*, *50*(2), 213--229.
+
+Assaf, A. G., & Tsionas, M. (2018). The estimation and decomposition of tourism productivity. *Tourism Management*, *65*, 131--142. https://doi.org/10.1016/j.tourman.2017.09.004
+
+Assaker, G., & Hallak, R. (2013). Moderating effects of tourists' novelty-seeking tendencies on destination image, visitor satisfaction, and short-and long-term revisit intentions. *Journal of Travel Research*, *52*(5), 600--613.
+
+Baillie, R. T. (1996). Long memory processes and fractional integration in econometrics. *Journal of Econometrics*, *73*(1), 5--59.
+
+Biggs, D., Hall, C. M., & Stoeckl, N. (2012). The resilience of formal and informal tourism enterprises to disasters: Reef tourism in Phuket, Thailand. *Journal of Sustainable Tourism*, *20*(5), 645--665.
+
+Brouder, P. (2020). Reset redux: Possible evolutionary pathways towards the transformation of tourism in a COVID-19 world. *Tourism Geographies*, *22*(3), 484--490.
+
+Butler, R. (1980). The concept of a tourist area cycle of evolution: implications for management of resources. *Canadian Geographer*, *24*, 5--12. https://doi.org/10.1111/j.1541-0064.1980.tb00970.x
+
+Butler, R. (2025). Tourism destination development: The tourism area life cycle model. *Tourism Geographies*, *27*(3--4), 599--607.
+
+Caporale, G. M., & Gil-Alana, L. A. (2002). Fractional integration and mean reversion in stock prices. *The Quarterly Review of Economics and Finance*, *42*(3), 599--609.
+
+Caporale, G. M., Gil-Alana, L. A., & Imeri, A. (2023). Tourism persistence in the Southeastern European countries: The impact of covid-19. *Cogent Economics & Finance*, *11*(2), 2280349.
+
+Claudio-Quiroga, G., de Villanueva, C. F., & Gil-Alana, L. A. (2024). Tourism and covid-19 in three European cities. Change in persistence. *Cogent Social Sciences*, *10*(1), 2358159.
+
+Cuestas, J. C., & Gil-Alana, L. A. (2016). Testing for long memory in the presence of non-linear deterministic trends with Chebyshev polynomials. *Studies in Nonlinear Dynamics & Econometrics*, *20*(1), 57--74.
+
+Cuñado, J., Gil-Alana, L. A., & de Gracia, F. P. (2008). Persistence in international monthly arrivals in the Canary Islands. *Tourism Economics*, *14*(1), 123--129.
+
+Dickey, D. A., Hasza, D. P., & Fuller, W. A. (1984). Testing for unit roots in seasonal time series. *Journal of the American Statistical Association*, *79*(386), 355--367.
+
+Dutta, A., Mishra, T., Uddin, G. S., & Yang, Y. (2021). Brexit uncertainty and volatility persistence in tourism demand. *Current Issues in Tourism*, *24*(16), 2225--2232.
+
+Getz, D. (1992). Tourism planning and destination life cycle. *Annals of Tourism Research*, *19*(4), 752--770.
+
+Geweke, J., & Porter‐Hudak, S. (1983). The estimation and application of long memory time series models. *Journal of Time Series Analysis*, *4*(4), 221--238.
+
+Gil-Alana, L. A. (2005). Modelling international monthly arrivals using seasonal univariate long-memory processes. *Tourism Management*, *26*(6), 867--878.
+
+Gil-Alana, L. A., & Huijbens, E. H. (2018). Tourism in Iceland: Persistence and seasonality. *Annals of Tourism Research*, *68*, 20--29.
+
+Gil-Alana, L. A., & Poza, C. (2022). The impact of COVID-19 on the Spanish tourism sector. *Tourism Economics*, *28*(3), 646--653.
+
+Gil-Alana, L. A., & Robinson, P. M. (1997). Testing of unit root and other nonstationary hypotheses in macroeconomic time series. *Journal of Econometrics*, *80*(2), 241--268.
+
+Gil‐Alana, L. A., & Robinson, P. M. (2001). Testing of seasonal fractional integration in UK and Japanese consumption and income. *Journal of Applied Econometrics*, *16*(2), 95--114.
+
+Gil-Alana, L. A., Ruiz-Alba, J. L., & Ayestarán, R. (2020). UK tourism arrivals and departures: seasonality, persistence and time trends. *Applied Economics*, *52*(46), 5077--5087.
+
+Gössling, S., Scott, D., & Hall, C. M. (2020). Pandemics, tourism and global change: a rapid assessment of COVID-19. *Journal of Sustainable Tourism*, *29*(1), 1--20.
+
+Grabher, G. (1993). The weakness of strong ties: The lock-in of regional development in the Ruhr area. In G. Grabher (Ed.), *The Embedded Firm: On the Socioeconomics of Industrial Networks*. Routledge.
+
+Granger, C. W. J., & Joyeux, R. (1980). An introduction to long‐memory time series models and fractional differencing. *Journal of Time Series Analysis*, *1*(1), 15--29.
+
+Hylleberg, S., Engle, R. F., Granger, C. W. J., & Yoo, B. S. (1990). Seasonal integration and cointegration. *Journal of Econometrics*, *44*(1--2), 215--238.
+
+INE. (2022). Número de visitantes según tipología. In *Movimientos Turísticos en Fronteras*. https://www.ine.es/jaxiT3/Tabla.htm?t=10821&L=0
+
+INE. (2024). Contribution of tourism to the Spanish economy - Year 2023. In *Spanish Tourism Satellite Account*. https://www.ine.es/dyngs/INEbase/en/operacion.htm?c=Estadistica_C&cid=1254736169169&menu=ultiDatos&idp=1254735576581
+
+Martin, R. (2012). Regional economic resilience, hysteresis and recessionary shocks. *Journal of Economic Geography*, *12*(1), 1--32.
+
+Martin, R., & Sunley, P. (2006). Path dependence and regional economic evolution. *Journal of Economic Geography*, *6*(4), 395--437.
+
+Muštra, V., Perić, B. Š., & Pivčević, S. (2023). Cultural heritage sites, tourism and regional economic resilience. *Papers in Regional Science*, *102*(3), 465--483.
+
+Nelson, C. R., & Plosser, C. R. (1982). Trends and random walks in macroeconmic time series: some evidence and implications. *Journal of Monetary Economics*, *10*(2), 139--162.
+
+Neuburger, L., & Egger, R. (2021). Travel risk perception and travel behaviour during the COVID-19 pandemic 2020: A case study of the DACH region. *Current Issues in Tourism*, *24*(7), 1003--1016.
+
+Nguyen, Q. H. (2021). Tourism demand elasticities by income and prices of international market regions: evidence using Vietnam's data. *Economies*, *10*(1), 1.
+
+Payne, J. E., Gil-Alana, L. A., Mervar, A., & Goenechea, M. (2023). Tourist arrivals and overnight stays along the Croatian Adriatic Coast: Changes in persistence and seasonality from the COVID-19 disruption. *Tourism Economics*, *29*(6), 1679--1693.
+
+Perron, P. (1989). The great crash, the oil price shock, and the unit root hypothesis. *Econometrica: Journal of the Econometric Society*, 1361--1401.
+
+Reisen, V. A., Rodrigues, A. L., & Palma, W. (2006). Estimation of seasonal fractionally integrated processes. *Computational Statistics & Data Analysis*, *50*(2), 568--582.
+
+Robinson, P. M. (1994). Efficient tests of nonstationary hypotheses. *Journal of the American Statistical Association*, *89*(428), 1420--1437.
+
+Simmie, J., & Martin, R. (2010). The economic resilience of regions: towards an evolutionary approach. *Cambridge Journal of Regions, Economy and Society*, *3*(1), 27--43.
+
+Solarin, S. A., Claudio-Quiroga, G., & Gil-Alana, L. A. (2024). Persistence in Australian tourism employment industries. *Current Issues in Tourism*, *27*(5), 754--767.
+
+Solarin, S. A., Claudio-Quiroga, G., & Gil-Alana, L. A. (2026). Persistence of tourism electronic card transaction expenditure: implications for policy interventions. *Journal of Policy Research in Tourism, Leisure and Events*, 1--13.
+
+Song, H., Dwyer, L., Li, G., & Cao, Z. (2012). Tourism economics research: A review and assessment. *Annals of Tourism Research*, *39*(3), 1653--1682.
+
+Song, H., & Witt, S. F. (2006). Forecasting international tourist flows to Macau. *Tourism Management*, *27*(2), 214--224.
+
+Sowell, F. (1992). Maximum likelihood estimation of stationary univariate fractionally integrated time series models. *Journal of Econometrics*, *53*(1--3), 165--188.
+
+Stotten, R., Schermer, M., & Wilson, G. A. (2021). Lock-ins and community resilience: Two contrasting development pathways in the Austrian Alps. *Journal of Rural Studies*, *84*, 124--133.
+
+Sun, X., Wandelt, S., & Zhang, A. (2020). How did COVID-19 impact air transportation? A first peek through the lens of complex networks. *Journal of Air Transport Management*, *89*, 101928.
+
+**Table 1: Estimated Coefficients: Total Arrivals (Data Ending in December 2019)**
+
+<div class="paper-table" role="region" aria-label="Table 1" tabindex="0">
+<table style="width:100%;">
+<colgroup>
+<col style="width: 21%" />
+<col style="width: 23%" />
+<col style="width: 20%" />
+<col style="width: 21%" />
+<col style="width: 12%" />
+</colgroup>
+<thead>
+<tr>
+<th><strong>Series</strong></th>
+<th><strong>d (95% band)</strong></th>
+<th style="text-align: center;"><strong>Intercept (tv)</strong></th>
+<th><strong>Time trend (tv)</strong></th>
+<th><strong>Seasonal</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Andalucia</td>
+<td>0.44 (0.37, 0.55)</td>
+<td>13.542 (95.86)</td>
+<td>0.0028 (2.66)</td>
+<td>0.976</td>
+</tr>
+<tr>
+<td>Aragon</td>
+<td>0.28 (0.20, 0.38)</td>
+<td>11.784 (159.93)</td>
+<td>0.0023 (4.68)</td>
+<td>0.866</td>
+</tr>
+<tr>
+<td>Asturias</td>
+<td>0.19 (0.13, 0.26)</td>
+<td>11.231 (102.93)</td>
+<td>0.0024 (3.45)</td>
+<td>0.960</td>
+</tr>
+<tr>
+<td>Balearic Islands</td>
+<td>0.54 (0.41, 0.68)</td>
+<td>12.624 (22.77)</td>
+<td>---</td>
+<td>0.992</td>
+</tr>
+<tr>
+<td>Canary Islands</td>
+<td>0.59 (0.51, 0.67)</td>
+<td>12.898 (163.05)</td>
+<td>0.0029 (3.59)</td>
+<td>0.811</td>
+</tr>
+<tr>
+<td>Cantabria</td>
+<td>0.13 (0.08, 0.20)</td>
+<td>11.069 (107.05)</td>
+<td>0.0014 (2.10)</td>
+<td>0.977</td>
+</tr>
+<tr>
+<td>Castilla and Leon</td>
+<td>0.22 (0.16, 0.30)</td>
+<td>12.510 (18,64)</td>
+<td>0.0016 (3.06)</td>
+<td>0.965</td>
+</tr>
+<tr>
+<td>Castilla-La Mancha</td>
+<td>0.34 (0.27, 0.43)</td>
+<td>11.838 (160.84)</td>
+<td>0.0010 (2.11)</td>
+<td>0.933</td>
+</tr>
+<tr>
+<td>Catalonia</td>
+<td>0.35 (0.27, 0.48)</td>
+<td>13.445 (95.92)</td>
+<td>0.0036 (3.70)</td>
+<td>0.978</td>
+</tr>
+<tr>
+<td>Com. of Valencia</td>
+<td>0.37 (0.31, 0.45)</td>
+<td>12.739 (113.80)</td>
+<td>0.0032 (4.11)</td>
+<td>0.955</td>
+</tr>
+<tr>
+<td>Extremadura</td>
+<td>0.28 (0.20, 0.37)</td>
+<td>11.261 (138,74)</td>
+<td>0.0015 (2.85)</td>
+<td>0.932</td>
+</tr>
+<tr>
+<td>Galicia</td>
+<td>0.42 (0.74, 0.55)</td>
+<td>12.092 (64.97)</td>
+<td>0.0026 (1.88)</td>
+<td>0.958</td>
+</tr>
+<tr>
+<td>Madrid</td>
+<td>0.67 (0.59, 0.76)</td>
+<td>12.906 (142.59)</td>
+<td>0.0038 (3.12)</td>
+<td>0.913</td>
+</tr>
+<tr>
+<td>Murcia</td>
+<td>0.41 (0.34, 0.51)</td>
+<td>10.920 (113.22)</td>
+<td>0.0027 (3.97)</td>
+<td>0.914</td>
+</tr>
+<tr>
+<td>Navarra</td>
+<td>0.35 (0.28, 0.45)</td>
+<td>10.617 (83.89)</td>
+<td>0.0029 (3.37)</td>
+<td>0.960</td>
+</tr>
+<tr>
+<td>Basque Country</td>
+<td>0.47 (0.39, 0.58)</td>
+<td>11.556 (95.21)</td>
+<td>0.0037 (3.84)</td>
+<td>0.947</td>
+</tr>
+<tr>
+<td>Rioja</td>
+<td>0.24 (0.16, 0.35)</td>
+<td>10.343 (131.09)</td>
+<td>0.0018 (3.57)</td>
+<td>0.937</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+Source: own elaboration. Note: Column 2 indicates the estimates of the differencing parameter d and in parenthesis its 95% confidence interval. Columns 3 and 4 show the estimtaes of the constant and the time trend respectively (t-values in parenthesis). The last column displays the estimate of the seasonal AR coefficient.
+
+**Table 2: Estimated Coefficients: Resident Arrivals (Data Ending in December 2019)**
+
+<div class="paper-table" role="region" aria-label="Table 2" tabindex="0">
+<table>
+<colgroup>
+<col style="width: 21%" />
+<col style="width: 21%" />
+<col style="width: 23%" />
+<col style="width: 21%" />
+<col style="width: 11%" />
+</colgroup>
+<thead>
+<tr>
+<th><strong>Series</strong></th>
+<th><strong>d (95% band)</strong></th>
+<th style="text-align: center;"><strong>Intercept (tv)</strong></th>
+<th><strong>Time trend (tv)</strong></th>
+<th><strong>Seasonal</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Andalucia</td>
+<td>0.35 (0.30, 0.42)</td>
+<td>13.062 (129.42)</td>
+<td>0.0024 (3.53)</td>
+<td>0.951</td>
+</tr>
+<tr>
+<td>Aragon</td>
+<td>0.24 (0.16, 0.32)</td>
+<td>11.665 (191.92)</td>
+<td>0.0018 (4.64)</td>
+<td>0.829</td>
+</tr>
+<tr>
+<td>Asturias</td>
+<td>0.17 (0.11, 0.24)</td>
+<td>11.157 (115.44)</td>
+<td>0.0021 (3.30)</td>
+<td>0.953</td>
+</tr>
+<tr>
+<td>Balearic Islands</td>
+<td>0.52 (0.40, 0.67)</td>
+<td>11.201 (38.54)</td>
+<td>---</td>
+<td>0.956</td>
+</tr>
+<tr>
+<td>Canary Islands</td>
+<td>0.31 (0.25, 0.39)</td>
+<td>11.682 (112.82)</td>
+<td>0.0016 (2.39)</td>
+<td>0.912</td>
+</tr>
+<tr>
+<td>Cantabria</td>
+<td>0.13 (0.07, 0.20)</td>
+<td>1.928 (112.84)</td>
+<td>0.0011 (1.77)</td>
+<td>0.969</td>
+</tr>
+<tr>
+<td>Castilla and Leon</td>
+<td>0.19 (0.13, 0.26)</td>
+<td>12.342 (203.33)</td>
+<td>0.0012 (3.11)</td>
+<td>0.944</td>
+</tr>
+<tr>
+<td>Castilla-La Mancha</td>
+<td>0.32 (0.26, 0.40)</td>
+<td>11.674 (185.34)</td>
+<td>0.0009 (2.20)</td>
+<td>0.906</td>
+</tr>
+<tr>
+<td>Catalonia</td>
+<td>0.20 (0.13, 0.28)</td>
+<td>12.795 (191.03)</td>
+<td>0.0022 (5.01)</td>
+<td>0.931</td>
+</tr>
+<tr>
+<td>Com. of Valencia</td>
+<td>0.28 (0.22, 0.35)</td>
+<td>12.398 (131.08)</td>
+<td>0.0026 (4.13)</td>
+<td>0.933</td>
+</tr>
+<tr>
+<td>Extremadura</td>
+<td>0.23 (0.16, 0.32)</td>
+<td>11.141 (169.56)</td>
+<td>0.0013 (2.92)</td>
+<td>0.913</td>
+</tr>
+<tr>
+<td>Galicia</td>
+<td>0.38 (0.32, 0.46)</td>
+<td>12.149 (101.46)</td>
+<td>----</td>
+<td>0.943</td>
+</tr>
+<tr>
+<td>Madrid</td>
+<td>0.52 (0.44, 0.61)</td>
+<td>12.413 (180.76)</td>
+<td>0.0035 (5.83)</td>
+<td>0.819</td>
+</tr>
+<tr>
+<td>Murcia</td>
+<td>0.36 (0.29, 0.45)</td>
+<td>10.787 (126.67)</td>
+<td>0.0023 (3.99)</td>
+<td>0.896</td>
+</tr>
+<tr>
+<td>Navarra</td>
+<td>0.37 (0.30, 0.48)</td>
+<td>10.421 (95.14)</td>
+<td>0.0028 (4.19)</td>
+<td>0.921</td>
+</tr>
+<tr>
+<td>Basque Country</td>
+<td>0.46 (0.37, 0.58)</td>
+<td>11.282 (130.75)</td>
+<td>0.0016 (3.76)</td>
+<td>0.858</td>
+</tr>
+<tr>
+<td>Rioja</td>
+<td>0.22 (0.14, 0.31)</td>
+<td>10.207 (161.40)</td>
+<td>0.0026 (4.13)</td>
+<td>0.900</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+Source: own elaboration. Note: Column 2 indicates the estimates of the differencing parameter d and in parenthesis its 95% confidence interval. Columns 3 and 4 show the estimates of the constant and the time trend respectively (t-values in parenthesis). The last column displays the estimate of the seasonal AR coefficient.
+
+**Table 3: Estimated Coefficients: Non-Resident Arrivals (Data Ending in December 2019)**
+
+<div class="paper-table" role="region" aria-label="Table 3" tabindex="0">
+<table>
+<colgroup>
+<col style="width: 21%" />
+<col style="width: 21%" />
+<col style="width: 23%" />
+<col style="width: 21%" />
+<col style="width: 11%" />
+</colgroup>
+<thead>
+<tr>
+<th><strong>Series</strong></th>
+<th><strong>d (95% band)</strong></th>
+<th style="text-align: center;"><strong>Intercept (tv)</strong></th>
+<th><strong>Time trend (tv)</strong></th>
+<th><strong>Seasonal</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Andalucia</td>
+<td>0.58 (0.50, 0.81)</td>
+<td>12.392 (46.67)</td>
+<td>---</td>
+<td>0.985</td>
+</tr>
+<tr>
+<td>Aragon</td>
+<td>0.40 (0.28, 0.58)</td>
+<td>9.756 (51.26)</td>
+<td>0.0049 (3.66)</td>
+<td>0.932</td>
+</tr>
+<tr>
+<td>Asturias</td>
+<td>0.26 (0.18, 0.36)</td>
+<td>8.667 (41.08)</td>
+<td>0.0050 (3.62)</td>
+<td>0.972</td>
+</tr>
+<tr>
+<td>Balearic Islands</td>
+<td>0.17 (0.08, 0.27)</td>
+<td>12.540 (77.42)</td>
+<td>---</td>
+<td>0.981</td>
+</tr>
+<tr>
+<td>Canary Islands</td>
+<td>0.71 (0.63, 0.81)</td>
+<td>12.646 (131.56)</td>
+<td>0.0031 (1.98)</td>
+<td>0.834</td>
+</tr>
+<tr>
+<td>Cantabria</td>
+<td>0.30 (0.22, 0.42)</td>
+<td>8.907 (35.18)</td>
+<td>0.0034 (2.03)</td>
+<td>0.972</td>
+</tr>
+<tr>
+<td>Castilla and Leon</td>
+<td>0.40 (0.30, 0.58)</td>
+<td>10.534 (44.39)</td>
+<td>0.0033 (1.93)</td>
+<td>0.983</td>
+</tr>
+<tr>
+<td>Castilla-La Mancha</td>
+<td>0.33 (0.25, 0.46)</td>
+<td>9.973 (75.95)</td>
+<td>0.0015 (1.68)</td>
+<td>0.944</td>
+</tr>
+<tr>
+<td>Catalonia</td>
+<td>0.54 (0.47, 0.87)</td>
+<td>12.732 (55.75)</td>
+<td>---</td>
+<td>0.981</td>
+</tr>
+<tr>
+<td>Com. of Valencia</td>
+<td>0.57 (0.48, 0.68)</td>
+<td>11.554 (73.20)</td>
+<td>0.0040 (2.58)</td>
+<td>0.944</td>
+</tr>
+<tr>
+<td>Extremadura</td>
+<td>0.33 (0.24, 0.45)</td>
+<td>9.149 (64.68)</td>
+<td>0.0028 (2.96)</td>
+<td>0.897</td>
+</tr>
+<tr>
+<td>Galicia</td>
+<td>0.10 (0.01, 0.21)</td>
+<td>10.282 (78.81)</td>
+<td>0.0041 (4.78)</td>
+<td>0.928</td>
+</tr>
+<tr>
+<td>Madrid</td>
+<td>0.70 (0.61, 0.80)</td>
+<td>11.935 (88.50)</td>
+<td>0.0045 (2.16)</td>
+<td>0.926</td>
+</tr>
+<tr>
+<td>Murcia</td>
+<td>0.47 (0.39, 0.58)</td>
+<td>9.002 (64.37)</td>
+<td>0.0042 (3.83)</td>
+<td>0.861</td>
+</tr>
+<tr>
+<td>Navarra</td>
+<td>0.20 (0.11, 0.31)</td>
+<td>8.893 (56.51)</td>
+<td>0.0041 (4.01)</td>
+<td>0.974</td>
+</tr>
+<tr>
+<td>Basque Country</td>
+<td>0.44 (0.35, 0.57)</td>
+<td>10.135 (50.02)</td>
+<td>0.0055 (3.61)</td>
+<td>0.972</td>
+</tr>
+<tr>
+<td>Rioja</td>
+<td>0.14 (0.04, 0.29)</td>
+<td>8.285 (59.95)</td>
+<td>0.0029 (3.20)</td>
+<td>0.968</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+Source: own elaboration. Note: Column 2 indicates the estimates of the differencing parameter d and in parenthesis its 95% confidence interval. Columns 3 and 4 show the estimates of the constant and the time trend respectively (t-values in parenthesis). The last column displays the estimate of the seasonal AR coefficient.
+
+**Table 4: Estimated Coefficients: Total Arrivals (Data Ending in August 2025)**
+
+<div class="paper-table" role="region" aria-label="Table 4" tabindex="0">
+<table>
+<colgroup>
+<col style="width: 21%" />
+<col style="width: 21%" />
+<col style="width: 23%" />
+<col style="width: 21%" />
+<col style="width: 11%" />
+</colgroup>
+<thead>
+<tr>
+<th><strong>Series</strong></th>
+<th><strong>d (95% band)</strong></th>
+<th style="text-align: center;"><strong>Intercept (tv)</strong></th>
+<th><strong>Time trend (tv)</strong></th>
+<th><strong>Seasonal</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Andalucia</td>
+<td>0.36 (0.26, 0.49)</td>
+<td>13.822 (47.97)</td>
+<td>---</td>
+<td>0.103</td>
+</tr>
+<tr>
+<td>Aragon</td>
+<td>0.30 (0.21, 0.42)</td>
+<td>12.000 (60.66)</td>
+<td>---</td>
+<td>0.078</td>
+</tr>
+<tr>
+<td>Asturias</td>
+<td>0.42 (0.30, 0.58)</td>
+<td>11.305 (32.43)</td>
+<td>---</td>
+<td>0.245</td>
+</tr>
+<tr>
+<td>Balearic Islands</td>
+<td>0.59 (0.44, 0.78)</td>
+<td>12.544 (15.41)</td>
+<td>---</td>
+<td>0.523</td>
+</tr>
+<tr>
+<td>Canary Islands</td>
+<td>0.47 (0.37, 0.59)</td>
+<td>13.069 (32.00)</td>
+<td>---</td>
+<td>0.031</td>
+</tr>
+<tr>
+<td>Cantabria</td>
+<td>0.50 (0.36, 0.70)</td>
+<td>10.931 (24.46)</td>
+<td>---</td>
+<td>0.291</td>
+</tr>
+<tr>
+<td>Castilla and Leon</td>
+<td>0.42 (0.31, 0.56)</td>
+<td>12.538 (37.47)</td>
+<td>---</td>
+<td>0.107</td>
+</tr>
+<tr>
+<td>Castilla-La Mancha</td>
+<td>0.33 (0.23, 0.44)</td>
+<td>11.908 (57.02)</td>
+<td>---</td>
+<td>0.054</td>
+</tr>
+<tr>
+<td>Catalonia</td>
+<td>0.41 (0.31, 0.55)</td>
+<td>13.684 (36.73)</td>
+<td>---</td>
+<td>0.123</td>
+</tr>
+<tr>
+<td>Com. of Valencia</td>
+<td>0.36 (0.27, 0.49)</td>
+<td>13.035 (48.03)</td>
+<td>---</td>
+<td>0.089</td>
+</tr>
+<tr>
+<td>Extremadura</td>
+<td>0.30 (0.21, 0.42)</td>
+<td>11.392 (63.67)</td>
+<td>---</td>
+<td>0.101</td>
+</tr>
+<tr>
+<td>Galicia</td>
+<td>0.43 (0.31, 0.58)</td>
+<td>12.290 (34.03)</td>
+<td>---</td>
+<td>0.180</td>
+</tr>
+<tr>
+<td>Madrid</td>
+<td>0.35 (0.27, 0.44)</td>
+<td>13.317 (52.44)</td>
+<td>---</td>
+<td>0.025</td>
+</tr>
+<tr>
+<td>Murcia</td>
+<td>0.32 (0.23, 0.43)</td>
+<td>11.237 (58.02)</td>
+<td>---</td>
+<td>0.078</td>
+</tr>
+<tr>
+<td>Navarra</td>
+<td>0.38 (0.27, 0.51)</td>
+<td>10.871 (41.48)</td>
+<td>---</td>
+<td>0.143</td>
+</tr>
+<tr>
+<td>Basque Country</td>
+<td>0.37 (0.27, 0.49)</td>
+<td>11.937 (45.80)</td>
+<td>---</td>
+<td>0.080</td>
+</tr>
+<tr>
+<td>Rioja</td>
+<td>0.46 (0.35, 0.61)</td>
+<td>10.319 (30.48)</td>
+<td>---</td>
+<td>0.138</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+Source: own elaboration. Note: Column 2 indicates the estimates of the differencing parameter d and in parenthesis its 95% confidence interval. Columns 3 and 4 show the estimates of the constant and the time trend respectively (t-values in parenthesis). The last column displays the estimate of the seasonal AR coefficient.
+
+**Table 5: Estimated Coefficients: Resident Arrivals (Data Ending in August 2025)**
+
+<div class="paper-table" role="region" aria-label="Table 5" tabindex="0">
+<table>
+<colgroup>
+<col style="width: 21%" />
+<col style="width: 21%" />
+<col style="width: 23%" />
+<col style="width: 21%" />
+<col style="width: 11%" />
+</colgroup>
+<thead>
+<tr>
+<th><strong>Series</strong></th>
+<th><strong>d (95% band)</strong></th>
+<th style="text-align: center;"><strong>Intercept (tv)</strong></th>
+<th><strong>Time trend (tv)</strong></th>
+<th><strong>Seasonal</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Andalucia</td>
+<td>0.32 (0.22, 0.45)</td>
+<td>13.307 (57.78)</td>
+<td>---</td>
+<td>0.105</td>
+</tr>
+<tr>
+<td>Aragon</td>
+<td>0.28 (0.19, 0.40)</td>
+<td>11.833 (70.51)</td>
+<td>---</td>
+<td>0.066</td>
+</tr>
+<tr>
+<td>Asturias</td>
+<td>0.40 (0.28, 0.56)</td>
+<td>11.234 (36.86)</td>
+<td>---</td>
+<td>0.238</td>
+</tr>
+<tr>
+<td>Balearic Islands</td>
+<td>0.48 (0.44, 0.65)</td>
+<td>11.241 (24.98)</td>
+<td>---</td>
+<td>0.369</td>
+</tr>
+<tr>
+<td>Canary Islands</td>
+<td>0.47 (0.35, 0.62)</td>
+<td>11.716 (30.95)</td>
+<td>---</td>
+<td>0.098</td>
+</tr>
+<tr>
+<td>Cantabria</td>
+<td>0.48 (0.34, 0.67)</td>
+<td>10.811 (26.31)</td>
+<td>---</td>
+<td>0.285</td>
+</tr>
+<tr>
+<td>Castilla and Leon</td>
+<td>0.40 (0.29, 0.53)</td>
+<td>12.353 (41.07)</td>
+<td>---</td>
+<td>0.086</td>
+</tr>
+<tr>
+<td>Castilla-La Mancha</td>
+<td>0.31 (0.22, 0.43)</td>
+<td>11.738 (62.74)</td>
+<td>---</td>
+<td>0.047</td>
+</tr>
+<tr>
+<td>Catalonia</td>
+<td>0.35 (0.25, 0.49)</td>
+<td>12.971 (50.58)</td>
+<td>---</td>
+<td>0.091</td>
+</tr>
+<tr>
+<td>Com. of Valencia</td>
+<td>0.35 (0.24, 0.48)</td>
+<td>12.601 (49.91)</td>
+<td>---</td>
+<td>0.100</td>
+</tr>
+<tr>
+<td>Extremadura</td>
+<td>0.29 (0.20, 0.41)</td>
+<td>11.241 (67.10)</td>
+<td>---</td>
+<td>0.094</td>
+</tr>
+<tr>
+<td>Galicia</td>
+<td>0.39 (0.27, 0.54)</td>
+<td>12.132 (40.56)</td>
+<td>---</td>
+<td>0.169</td>
+</tr>
+<tr>
+<td>Madrid</td>
+<td>0.32 (0.24, 0.42)</td>
+<td>12.764 (60.20)</td>
+<td>---</td>
+<td>0.021</td>
+</tr>
+<tr>
+<td>Murcia</td>
+<td>0.31 (0.21, 0.42)</td>
+<td>11.092 (61.01)</td>
+<td>---</td>
+<td>0.077</td>
+</tr>
+<tr>
+<td>Navarra</td>
+<td>0.32 (0.23, 0.44)</td>
+<td>11.582 (58.84)</td>
+<td>---</td>
+<td>0.042</td>
+</tr>
+<tr>
+<td>Basque Country</td>
+<td>0.43 (0.33, 0.57)</td>
+<td>10.210 (35.78)</td>
+<td>---</td>
+<td>0.125</td>
+</tr>
+<tr>
+<td>Rioja</td>
+<td>0.35 (0.24, 0.48)</td>
+<td>12.601 (49.91)</td>
+<td>---</td>
+<td>0.100</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+Source: own elaboration. Note: Column 2 indicates the estimates of the differencing parameter d and in parenthesis its 95% confidence interval. Columns 3 and 4 show the estimates of the constant and the time trend respectively (t-values in parenthesis). The last column displays the estimate of the seasonal AR coefficient.
+
+**Table 6: Estimated Coefficients: Non-Resident Arrivals (Data Ending in August 2025)**
+
+<div class="paper-table" role="region" aria-label="Table 6" tabindex="0">
+<table>
+<colgroup>
+<col style="width: 21%" />
+<col style="width: 21%" />
+<col style="width: 23%" />
+<col style="width: 21%" />
+<col style="width: 11%" />
+</colgroup>
+<thead>
+<tr>
+<th><strong>Series</strong></th>
+<th><strong>d (95% band)</strong></th>
+<th style="text-align: center;"><strong>Intercept (tv)</strong></th>
+<th><strong>Time trend (tv)</strong></th>
+<th><strong>Seasonal</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Andalucia</td>
+<td>0.53 (0.42, 0.67)</td>
+<td>12.717 (24.56)</td>
+<td>---</td>
+<td>0.128</td>
+</tr>
+<tr>
+<td>Aragon</td>
+<td>0.51 (0.40, 0.66)</td>
+<td>9.763 (23.88)</td>
+<td>---</td>
+<td>0.231</td>
+</tr>
+<tr>
+<td>Asturias</td>
+<td>0.73 (0.57, 0.93)</td>
+<td>8.022 (12.47)</td>
+<td>---</td>
+<td>0.407</td>
+</tr>
+<tr>
+<td>Balearic Islands</td>
+<td>0.76 (0.59, 0.96)</td>
+<td>11.8691 (11.01)</td>
+<td>---</td>
+<td>0.559</td>
+</tr>
+<tr>
+<td>Canary Islands</td>
+<td>0.56 (0.46, 0.68)</td>
+<td>12.709 (24.04)</td>
+<td>---</td>
+<td>0.037</td>
+</tr>
+<tr>
+<td>Cantabria</td>
+<td>0.73 (0.54, 0.96)</td>
+<td>8.208 (12.21)</td>
+<td>---</td>
+<td>0.430</td>
+</tr>
+<tr>
+<td>Castilla and Leon</td>
+<td>0.62 (0.48, 0.79)</td>
+<td>10.335 (17.97)</td>
+<td>---</td>
+<td>0.289</td>
+</tr>
+<tr>
+<td>Castilla-La Mancha</td>
+<td>0.50 (0.39, 0.63)</td>
+<td>9.946 (27.15)</td>
+<td>---</td>
+<td>0.167</td>
+</tr>
+<tr>
+<td>Catalonia</td>
+<td>0.52 (0.41, 0.66)</td>
+<td>12.785 (24.71)</td>
+<td>---</td>
+<td>0.164</td>
+</tr>
+<tr>
+<td>Com. of Valencia</td>
+<td>0.50 (0.40, 0.62)</td>
+<td>11.818 (27.51)</td>
+<td>---</td>
+<td>0.098</td>
+</tr>
+<tr>
+<td>Extremadura</td>
+<td>0.49 (0.38, 0.61)</td>
+<td>9.285 (26.31)</td>
+<td>---</td>
+<td>0.206</td>
+</tr>
+<tr>
+<td>Galicia</td>
+<td>0.61 (0.49, 0.78)</td>
+<td>9.804 (15.87)</td>
+<td>---</td>
+<td>0.348</td>
+</tr>
+<tr>
+<td>Madrid</td>
+<td>0.45 (0.38, 0.55)</td>
+<td>12.357 (34.17)</td>
+<td>---</td>
+<td>0.049</td>
+</tr>
+<tr>
+<td>Murcia</td>
+<td>0.47 (0.37, 0.59)</td>
+<td>9.297 (28.94)</td>
+<td>---</td>
+<td>0.129</td>
+</tr>
+<tr>
+<td>Navarra</td>
+<td>0.69 (0.46, 0.79)</td>
+<td>8.653 (16.26)</td>
+<td>---</td>
+<td>0.366</td>
+</tr>
+<tr>
+<td>Basque Country</td>
+<td>0.54 (0.42, 0.69)</td>
+<td>10.322 (21.95)</td>
+<td>---</td>
+<td>0.202</td>
+</tr>
+<tr>
+<td>Rioja</td>
+<td>0.76 (0.58, 0.97)</td>
+<td>7.298 (11.50)</td>
+<td>---</td>
+<td>0.428</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+Source: own elaboration. Note: Column 2 indicates the estimates of the differencing parameter d and in parenthesis its 95% confidence interval. Columns 3 and 4 show the estimates of the constant and the time trend respectively (t-values in parenthesis). The last column displays the estimate of the seasonal AR coefficient.
+
+**Table 7: Comparisons in Persistence by Region**
+
+<div class="paper-table" role="region" aria-label="Table 7" tabindex="0">
+<table>
+<colgroup>
+<col style="width: 9%" />
+<col style="width: 7%" />
+<col style="width: 7%" />
+<col style="width: 8%" />
+<col style="width: 9%" />
+<col style="width: 7%" />
+<col style="width: 7%" />
+<col style="width: 8%" />
+<col style="width: 10%" />
+<col style="width: 7%" />
+<col style="width: 7%" />
+<col style="width: 9%" />
+</colgroup>
+<thead>
+<tr>
+<th colspan="4" style="text-align: center;"><strong>Total
+Arrivals</strong></th>
+<th colspan="4" style="text-align: center;"><strong>Resident
+Arrivals</strong></th>
+<th colspan="4" style="text-align: center;"><strong>Non-Resident
+Arrivals</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;"><strong>Region</strong></td>
+<td style="text-align: center;"><strong>-1994</strong></td>
+<td style="text-align: center;"><strong>-2025</strong></td>
+<td style="text-align: center;"><strong>%</strong></td>
+<td style="text-align: center;"><strong>Region</strong></td>
+<td style="text-align: center;"><strong>-1994</strong></td>
+<td style="text-align: center;"><strong>-2025</strong></td>
+<td style="text-align: center;"><strong>%</strong></td>
+<td style="text-align: center;"><strong>Region</strong></td>
+<td style="text-align: center;"><strong>-1994</strong></td>
+<td style="text-align: center;"><strong>-2025</strong></td>
+<td style="text-align: center;"><strong>%</strong></td>
+</tr>
+<tr>
+<td style="text-align: center;">CANT</td>
+<td style="text-align: center;">0.13</td>
+<td style="text-align: center;">0.5</td>
+<td style="text-align: center;">284.61</td>
+<td style="text-align: center;">CANT</td>
+<td style="text-align: center;">0.13</td>
+<td style="text-align: center;">0.48</td>
+<td style="text-align: center;">269.23</td>
+<td style="text-align: center;">GAL</td>
+<td style="text-align: center;">0.10</td>
+<td style="text-align: center;">0.61</td>
+<td style="text-align: center;">510.00</td>
+</tr>
+<tr>
+<td style="text-align: center;">AST</td>
+<td style="text-align: center;">0.19</td>
+<td style="text-align: center;">0.42</td>
+<td style="text-align: center;">121.05</td>
+<td style="text-align: center;">AST</td>
+<td style="text-align: center;">0.17</td>
+<td style="text-align: center;">0.40</td>
+<td style="text-align: center;">135.29</td>
+<td style="text-align: center;">RIO</td>
+<td style="text-align: center;">0.14</td>
+<td style="text-align: center;">0.76</td>
+<td style="text-align: center;">442.85</td>
+</tr>
+<tr>
+<td style="text-align: center;">RIO</td>
+<td style="text-align: center;">0.24</td>
+<td style="text-align: center;">0.46</td>
+<td style="text-align: center;">91.66</td>
+<td style="text-align: center;">CyL</td>
+<td style="text-align: center;">0.19</td>
+<td style="text-align: center;">0.40</td>
+<td style="text-align: center;">110.52</td>
+<td style="text-align: center;">BAL</td>
+<td style="text-align: center;">0.17</td>
+<td style="text-align: center;">0.76</td>
+<td style="text-align: center;">347.05</td>
+</tr>
+<tr>
+<td style="text-align: center;">CyL</td>
+<td style="text-align: center;">0.22</td>
+<td style="text-align: center;">0.42</td>
+<td style="text-align: center;">90.90</td>
+<td style="text-align: center;">CAT</td>
+<td style="text-align: center;">0.20</td>
+<td style="text-align: center;">0.35</td>
+<td style="text-align: center;">75.00</td>
+<td style="text-align: center;">NAV</td>
+<td style="text-align: center;">0.20</td>
+<td style="text-align: center;">0.69</td>
+<td style="text-align: center;">245.00</td>
+</tr>
+<tr>
+<td style="text-align: center;">CAT</td>
+<td style="text-align: center;">0.35</td>
+<td style="text-align: center;">0.41</td>
+<td style="text-align: center;">17.14</td>
+<td style="text-align: center;">RIO</td>
+<td style="text-align: center;">0.22</td>
+<td style="text-align: center;">0.35</td>
+<td style="text-align: center;">59.09</td>
+<td style="text-align: center;">AST</td>
+<td style="text-align: center;">0.26</td>
+<td style="text-align: center;">0.73</td>
+<td style="text-align: center;">180.77</td>
+</tr>
+<tr>
+<td style="text-align: center;">BAL</td>
+<td style="text-align: center;">0.54</td>
+<td style="text-align: center;">0.59</td>
+<td style="text-align: center;">9.26</td>
+<td style="text-align: center;">CAN</td>
+<td style="text-align: center;">0.31</td>
+<td style="text-align: center;">0.47</td>
+<td style="text-align: center;">51.61</td>
+<td style="text-align: center;">CANT</td>
+<td style="text-align: center;">0.30</td>
+<td style="text-align: center;">0.73</td>
+<td style="text-align: center;">143.33</td>
+</tr>
+<tr>
+<td style="text-align: center;">NAV</td>
+<td style="text-align: center;">0.35</td>
+<td style="text-align: center;">0.38</td>
+<td style="text-align: center;">8.57</td>
+<td style="text-align: center;">EXT</td>
+<td style="text-align: center;">0.23</td>
+<td style="text-align: center;">0.29</td>
+<td style="text-align: center;">26.08</td>
+<td style="text-align: center;">CyL</td>
+<td style="text-align: center;">0.40</td>
+<td style="text-align: center;">0.62</td>
+<td style="text-align: center;">55.00</td>
+</tr>
+<tr>
+<td style="text-align: center;">ARA</td>
+<td style="text-align: center;">0.28</td>
+<td style="text-align: center;">0.30</td>
+<td style="text-align: center;">7.14</td>
+<td style="text-align: center;">VAL</td>
+<td style="text-align: center;">0.28</td>
+<td style="text-align: center;">0.35</td>
+<td style="text-align: center;">25.00</td>
+<td style="text-align: center;">CMA</td>
+<td style="text-align: center;">0.33</td>
+<td style="text-align: center;">0.50</td>
+<td style="text-align: center;">51.51</td>
+</tr>
+<tr>
+<td style="text-align: center;">EXT</td>
+<td style="text-align: center;">0.28</td>
+<td style="text-align: center;">0.30</td>
+<td style="text-align: center;">7.14</td>
+<td style="text-align: center;">ARA</td>
+<td style="text-align: center;">0.24</td>
+<td style="text-align: center;">0.28</td>
+<td style="text-align: center;">16.66</td>
+<td style="text-align: center;">EXT</td>
+<td style="text-align: center;">0.33</td>
+<td style="text-align: center;">0.49</td>
+<td style="text-align: center;">48.48</td>
+</tr>
+<tr>
+<td style="text-align: center;">GAL</td>
+<td style="text-align: center;">0.42</td>
+<td style="text-align: center;">0.43</td>
+<td style="text-align: center;">2.38</td>
+<td style="text-align: center;">GAL</td>
+<td style="text-align: center;">0.38</td>
+<td style="text-align: center;">0.39</td>
+<td style="text-align: center;">2.63</td>
+<td style="text-align: center;">PVA</td>
+<td style="text-align: center;">0.44</td>
+<td style="text-align: center;">0.54</td>
+<td style="text-align: center;">22.72</td>
+</tr>
+<tr>
+<td style="text-align: center;">VAL</td>
+<td style="text-align: center;">0.37</td>
+<td style="text-align: center;">0.36</td>
+<td style="text-align: center;">-2.70</td>
+<td style="text-align: center;">CMA</td>
+<td style="text-align: center;">0.32</td>
+<td style="text-align: center;">0.31</td>
+<td style="text-align: center;">-3.12</td>
+<td style="text-align: center;">ARA</td>
+<td style="text-align: center;">0.40</td>
+<td style="text-align: center;">0.51</td>
+<td style="text-align: center;">27.50</td>
+</tr>
+<tr>
+<td style="text-align: center;">CMA</td>
+<td style="text-align: center;">0.34</td>
+<td style="text-align: center;">0.33</td>
+<td style="text-align: center;">-2.94</td>
+<td style="text-align: center;">PVA</td>
+<td style="text-align: center;">0.46</td>
+<td style="text-align: center;">0.43</td>
+<td style="text-align: center;">-6.52</td>
+<td style="text-align: center;">MUR</td>
+<td style="text-align: center;">0.47</td>
+<td style="text-align: center;">0.47</td>
+<td style="text-align: center;">0.00</td>
+</tr>
+<tr>
+<td style="text-align: center;">AND</td>
+<td style="text-align: center;">0.44</td>
+<td style="text-align: center;">0.36</td>
+<td style="text-align: center;">-18.18</td>
+<td style="text-align: center;">BAL</td>
+<td style="text-align: center;">0.52</td>
+<td style="text-align: center;">0.48</td>
+<td style="text-align: center;">-7.69</td>
+<td style="text-align: center;">CAT</td>
+<td style="text-align: center;">0.54</td>
+<td style="text-align: center;">0.52</td>
+<td style="text-align: center;">-3.70</td>
+</tr>
+<tr>
+<td style="text-align: center;">CAN</td>
+<td style="text-align: center;">0.59</td>
+<td style="text-align: center;">0.47</td>
+<td style="text-align: center;">-20.33</td>
+<td style="text-align: center;">AND</td>
+<td style="text-align: center;">0.35</td>
+<td style="text-align: center;">0.32</td>
+<td style="text-align: center;">-8.57</td>
+<td style="text-align: center;">AND</td>
+<td style="text-align: center;">0.58</td>
+<td style="text-align: center;">0.53</td>
+<td style="text-align: center;">-8.62</td>
+</tr>
+<tr>
+<td style="text-align: center;">PVA</td>
+<td style="text-align: center;">0.47</td>
+<td style="text-align: center;">0.37</td>
+<td style="text-align: center;">-21.27</td>
+<td style="text-align: center;">NAV</td>
+<td style="text-align: center;">0.37</td>
+<td style="text-align: center;">0.32</td>
+<td style="text-align: center;">-13.51</td>
+<td style="text-align: center;">VAL</td>
+<td style="text-align: center;">0.57</td>
+<td style="text-align: center;">0.50</td>
+<td style="text-align: center;">-12.20</td>
+</tr>
+<tr>
+<td style="text-align: center;">MUR</td>
+<td style="text-align: center;">0.41</td>
+<td style="text-align: center;">0.32</td>
+<td style="text-align: center;">-21.95</td>
+<td style="text-align: center;">MUR</td>
+<td style="text-align: center;">0.36</td>
+<td style="text-align: center;">0.31</td>
+<td style="text-align: center;">-13.88</td>
+<td style="text-align: center;">CAN</td>
+<td style="text-align: center;">0.71</td>
+<td style="text-align: center;">0.56</td>
+<td style="text-align: center;">-21.12</td>
+</tr>
+<tr>
+<td style="text-align: center;">MAD</td>
+<td style="text-align: center;">0.67</td>
+<td style="text-align: center;">0.35</td>
+<td style="text-align: center;">-47.76</td>
+<td style="text-align: center;">MAD</td>
+<td style="text-align: center;">0.52</td>
+<td style="text-align: center;">0.32</td>
+<td style="text-align: center;">-38.46</td>
+<td style="text-align: center;">MAD</td>
+<td style="text-align: center;">0.70</td>
+<td style="text-align: center;">0.45</td>
+<td style="text-align: center;">-35.71</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>Avg.</strong></td>
+<td style="text-align: center;"><strong>0.370</strong></td>
+<td style="text-align: center;"><strong>0.398</strong></td>
+<td style="text-align: center;"><strong>29.69</strong></td>
+<td style="text-align: center;"><strong>Avg.</strong></td>
+<td style="text-align: center;"><strong>0.308</strong></td>
+<td style="text-align: center;"><strong>0.367</strong></td>
+<td style="text-align: center;"><strong>39.69</strong></td>
+<td style="text-align: center;"><strong>Avg.</strong></td>
+<td style="text-align: center;"><strong>0.390</strong></td>
+<td style="text-align: center;"><strong>0.586</strong></td>
+<td style="text-align: center;"><strong>117.22</strong></td>
+</tr>
+</tbody>
+</table>
+</div>
+
+Source: own elaboration

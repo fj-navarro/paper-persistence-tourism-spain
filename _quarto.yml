@@ -5,13 +5,14 @@ project:
     - index.qmd
 
 website:
-  title: "Zinkea Papers"
+  title: "Persistence Dynamics of Regional Tourism Demand in Spain"
   navbar:
+    title: false
     left:
-      - href: https://www.zinkea.com/resources/
+      - href: https://zinkea.com/
+        text: Home
+      - href: https://zinkea.com/resources/
         text: Resources
-      - href: https://www.zinkea.com/
-        text: Zinkea
 
 format:
   html:

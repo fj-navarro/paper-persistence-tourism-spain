@@ -1,14 +1,13 @@
 ---
 title: "PERSISTENCE DYNAMICS OF REGIONAL TOURISM DEMAND IN SPAIN"
-abstract: |
-  This study examines the evolution of persistence in regional tourism demand across Spain following the COVID-19 pandemic. The analysis estimates fractional integration models with trends and seasonal components using monthly hotel arrivals from 1999 to 2025. Pre-pandemic tourism exhibited moderate persistence, with shocks ultimately mean-reverting across most regions. In contrast, estimates for the extended sample through August 2025 indicate systematically higher values of the fractional differencing parameter (d), particularly for non-resident tourism, implying slower mean reversion and more prolonged shock effects. Island and northern coastal regions register the largest increases in persistence, whereas domestic tourism remains comparatively stable. Overall, the results suggest that the inclusion of the COVID-19 period is associated with changes in the persistence and adjustment dynamics of regional tourism demand. The observed patterns are consistent with longer-lasting shock effects in some regions and visitor segments, especially in non-resident tourism flows.
-keywords: ["Tourism Persistence", "Spain", "Fractional Integration", "COVID-19", "Regional Tourism"]
 number-sections: false
 ---
 
-**Keywords:** Tourism Persistence; Spain; Fractional Integration, COVID-19, Regional Tourism
+# Abstract {.unnumbered}
 
-**JEL Classification:** C22
+This study examines the evolution of persistence in regional tourism demand across Spain following the COVID-19 pandemic. The analysis estimates fractional integration models with trends and seasonal components using monthly hotel arrivals from 1999 to 2025. Pre-pandemic tourism exhibited moderate persistence, with shocks ultimately mean-reverting across most regions. In contrast, estimates for the extended sample through August 2025 indicate systematically higher values of the fractional differencing parameter (d), particularly for non-resident tourism, implying slower mean reversion and more prolonged shock effects. Island and northern coastal regions register the largest increases in persistence, whereas domestic tourism remains comparatively stable. Overall, the results suggest that the inclusion of the COVID-19 period is associated with changes in the persistence and adjustment dynamics of regional tourism demand. The observed patterns are consistent with longer-lasting shock effects in some regions and visitor segments, especially in non-resident tourism flows.
+
+**Keywords:** Tourism Persistence; Spain; Fractional Integration, COVID-19, Regional Tourism
 
 # 1. Introduction
 
